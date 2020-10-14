@@ -42,6 +42,8 @@ An ontology provides a common vocabulary for people who need to share informatio
 
 * [Meeting Minutes](Minutes.log)
 
+* [Reading Notes](Readings.log)
+
 * [Project Log](Log.log)
 
 ## References

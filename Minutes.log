@@ -1,0 +1,89 @@
+2020.06.19, Meeting 000 {
+	Contents {
+		Introduction {
+			Ontologies: common vocabulary, TBox, ABox;
+			Define rules within ontologies: semantic web rule language (OWL + RuleML);
+		}
+		Tools {
+			Protege with plugins: visualiser to description logic;
+			Pallet: reasoners;
+		}
+		Discussion of the goal of the project;
+	}
+	Tasks {
+		Recent survey papers literature review: focus on summary on the field of ontology matching;
+		Explore existing open-source softwares;
+	}
+}
+
+2020.10.07, Meeting 001 {
+	Contents {
+		Provide meeting agenda, keep meeting records;
+		Project proposal {
+			Official deadline: 10.23;
+			Supervisor deadline: 10.19;
+			Structure {
+				Literature review;
+				Initial design;
+				Implementation;
+				Evaluation + evidence;
+				Conclusion;
+			}
+			Question: How will I solve the problem?
+		}
+		Ethics requirements;
+		Dataset: queryable, tables in database, excel, defined in OWL;
+		Querying dataset: SPARQL;
+		Discription logic reasoners: reasoning in OWL;
+		Define rules within ontologies: semantic web rule language (OWL 2 + RuleML);
+		Knowledge Representation and Reasoning: Dr. Natasha Alechina: http://www.cs.nott.ac.uk/~psznza/G53KRR/;
+		Semantic web basics: http://linkeddatatools.com/semantic-web-basics;
+		Ontology matching: http://www.ontologymatching.org/publications.html;
+		Ontology example: https://doi.org/10.5518/190;
+	}
+	Tasks {
+		Set project focus {
+			TBox matching;
+			ABox matching;
+			Dataset integration;
+		}
+		Fuzzy logic, rules and ontologies;
+		Ontology alignment;
+	}
+}
+
+2020.10.14, Meeting 002 {
+	Contents {
+		Project focus {
+			Use/Combine existing TBox matching methods;
+			Derive/Construct new ABox matching methods;
+			Implement data integration as evaluation/reasoning;
+		}
+		Research area {
+			Linked data & semantic web;
+			Who proposed this?
+			Linked data: same meaning;
+			Semantic web: top conference: International Semantic Web Conference (ISWC);
+		}
+		Dataset source {
+			Computer Science Bibliography: dblp: https://dblp.org;
+			ISWC on dblp: https://dblp.org/db/conf/semweb/index.html;
+			Journal of semantic web (editor: Ian Horrocks): https://www.journals.elsevier.com/journal-of-web-semantics;
+			Semantic Web for Earth and Environment Technology Ontology: SWEET Ontology Representation: http://sweetontology.net/repr;
+			NCBO BioPortal: https://bioportal.bioontology.org/;
+			SWEET on NCBO BioPortal: https://bioportal.bioontology.org/ontologies/SWEET;
+			The Environment Ontology: https://sites.google.com/site/environmentontology/Browse-EnvO;
+			Research Data Leeds Repository: https://archive.researchdata.leeds.ac.uk;
+			UK open data: https://data.gov.uk;
+			Ian Horrock's group in Oxford: reasoners;
+			Uli Sattler {
+				University of Manchester;
+				Description logic: An Introduction to Description Logic (book);
+				http://www.cs.man.ac.uk/~sattler/;
+			}
+		}
+	}
+	Tasks {
+		Heshan Du: A Logic of Directions;
+	}
+}
