@@ -40,11 +40,17 @@ An ontology provides a common vocabulary for people who need to share informatio
 
 * Data
 
-* [Meeting Minutes](Minutes.log)
+* [Project Proposal](Project_Proposal/)
 
-* [Reading Notes](Readings.log)
+* Interim Report
 
-* [Project Log](Log.log)
+* Final Report
+
+* [Meeting Minutes](Log/Minutes.log)
+
+* [Reading Notes](Log/Readings.log)
+
+* [Project Log](Log/Project.log)
 
 ## References
 
