@@ -1,14 +1,15 @@
-\documentclass[a4paper,12pt,twoside]{report}
+\documentclass[a4paper,12pt,twoside]{article}
 
 \usepackage{proposal}
 
 \begin{document}
 
-\title{Project Proposal: Ontology-based Data Integration}
+\title{Project Proposal (Draft):\\Ontology-based Data Integration}
 \author{Jizhou Che}
 \submitdate{October 2020}
 \degree{BSc Computer Science with Artificial Intelligence}
 \studentid{20032291}
+\studentemail{scyjc1@nottingham.edu.cn}
 \supervisor{Dr. Heshan Du}
 
 \normallinespacing
@@ -16,29 +17,137 @@
 
 % Delete the two declaration sentences in proposal.sty if not applicable. 
 
-\preface
+% \preface
 
-\input{tex/abstract}
+% \input{tex/abstract}
 
-\input{tex/acknowledgements}
+% \input{tex/acknowledgements}
 
 % There is a maximum limit of 15,000 words without exceeding 40 pages (A4 sides) for the main body of the dissertation that will be submitted in PDF. This limitation includes the bibliography and excludes cover/front pages (e.g., abstract, acknowledgement, table of contents) and excludes the appendices, listing of any codes or any other supporting documentation.
 % Note: Your dissertation should not exceed the word and page limits. You do not have to use up your word limit to get a good grade; never `pad out' your dissertation, this will only annoy the markers.
 
-\body
+% \body
 
-\input{tex/introduction}
+% \input{tex/introduction}
 
-\input{tex/background}
+% \input{tex/background}
 
-\input{tex/body}
+% \input{tex/body}
 
-\input{tex/summary}
+% \input{tex/summary}
+
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+\singlespacing
+
+\section{Background and Motivation}
+
+% (1 page) Briefly describe the background to the project, importance/need of the area, and motivation for carrying out the proposed work.
+% (Explaining the problem being solved.)
+
+The ability of using data from multiple sources simultaneously has always been demanded in both research and public areas. For example, translational research data from multiple biomedical domains can be integrated to track and analyze human-centered records \cite{wang2009translational}, and data exported from each peer in its own schema need to be integrated in a P2P system \cite{calvanese2003semantic}. These applications are benefited from the integrated datasets, in that the semantic interconnections between information from multiple sources are identified, providing substantial new possibilities in inter-operating and interpreting the data.
+\\\\
+Data integration in the context of the traditional web has been challenging. Firstly, the accessibility and usability of data are unpromising, as resources can be stored in heterogeneous formats that are not easily readable to the computers, such as Excel or scanned PDF. In addition, without a formal representation of the semantics of the knowledge within the data, the computers can only interpret the datasets at a very basic level \cite{shadbolt2006semantic}. Further more, the matching process needs to be carried out even if the datasets come from the same domain of interest, due to the lack of a uniform data modeling principle \cite{shvaiko2007ontology}.
+\\\\
+The idea of linked data and semantic web provides a fundamental framework for addressing these issues. Resources are uniquely identified by the Uniform Resource Identifiers (URIs), meaning that references or links to resources can be specifically established; The Resource Description Framework (RDF) defines the universal structure and captures the semantics of the data, to provide the power of interpreting and querying the datasets; The Web Ontology Language (OWL) enables efficient representation of ontologies, promoting a shared understanding of a knowledge domain by explicitly and formally specifying the objects and relations \cite{shadbolt2006semantic}. Rules can be defined with rule markup languages (RuleML) and also expressed in SPARQL queries \cite{polleres2007sparql}.
+\\\\
+Based on these concepts, the idea of ontology matching has evolved to become a solution to data integration. Information coming from multiple local sources are integrated without producing a newly merged dataset \cite{wache2001ontology}. In order to do this, a common ontology need to be built as an inter-connection between the ontologies of the domains where the data are sourced from \cite{shvaiko2007ontology}. This includes the matching of TBoxes, ABoxes and sometimes RBoxes, which are fundamental concepts of description logic \cite{baader2017introduction}. A query posed over the common ontology is decomposed into multiple queries over the respective datasets. This approach addresses the semantic heterogeneity problem in data integration to some extent \cite{vaishnavi2005semantic}.
+\\\\
+A number of previous works have been done in the research of ontology matching, suggesting approaches that fall into various categories \cite{shvaiko2007ontology}. However, the ones that target the application in data integration are not clearly recognised. An automated framework for general-purpose data integration is also absent, as current applications usually define the correspondences manually with the knowledge of domain experts for guaranteed correctness and completeness \cite{cruz2012interactive}. It is hence sensible to implement one that embeds the properly adapted strategies. The challenges reside in selecting the characteristics from ABoxes and TBoxes for matching, where a feature may introduce positive and negative effects on the result in different scenarios \cite{shvaiko2011ontology}. This project looks specifically into the matching of ABoxes that suits the needs of data integration.
+% \\\\
+% The traditional solutions to dataset integration typically relies on matching the semantically related entities at the schema level [Ontology matching, 8; Batini et al. 1986; Sheth and Larson 1990; Spaccapietra and Parent 1991; Parent and Spaccapietra 1998] or the catalog level [Bouquet et al. 2003b, Bernstein and Rahm 2000]. The drawback of such approaches is obvious: updates on the individual datasets are not reflected in the merged dataset without extra work. Further more, the matching process needs to be carried out even if the datasets come from the same domain of interest, due to the lack of a uniform data modeling principle [ontology matching, 8].
+
+% -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+% 1. Data integration: demand, application, importance, benefits
+
+% 2. Data integration challenges: semantic heterogeneity problem [], data fetching usability, data interpretation semantic analysis ---
+
+% 3. Linked data and semantic web: address the issue, identifying resources (URI), modeling data graphically (RDF), give semantics to domain terminologies (ontology) WHY THIS IS THE DIRECTION TO GO
+
+% 4. Ontology matching: the approach to data integration. PREVIOUS WORK
+
+% 5. current ontology matching strategies analysis: all manually, no automated implementation for data integration: the need to implement one.
+
+% 6. Potential challenges.
+
+% -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+% The need of using information simultaneously from multiple sources has been dramatically increasing in the recent researches [? citation] \cite{placeholder}. For example, datasets of different urban infrastructure assets can be integrated to produce a decision support system for city management [heshan], and --- []. Unfortunately, resources are usually constructed and maintained independently in heterogeneous formats [? citation] \cite{placeholder}. The traditional approach of making use of the interdependencies between datasets relies on matching the semantically related entities at the schema level [Ontology matching, 8; Batini et al. 1986; Sheth and Larson 1990; Spaccapietra and Parent 1991; Parent and Spaccapietra 1998] \cite{placeholder}. An obvious drawback of this approach is that updates performed on the individual datasets are not reflected in the merged dataset without extra work. Further more, the matching process needs to be carried out even if the datasets come from the same domain of interest, due to the lack of a uniform modeling principle [ontology matching, 8]\cite{placeholder}.
+% \\\\
+% Another challenge resides in that the usability of data in the traditional web is usually questionable: datasets can be represented in formats such as CSV, Excel, HTML, PDF table or even scanned pictures [Ontology matching, 11, linked data]. Computers play a very limited role in interpreting such media, doing solely words indexing and document serving, while the intelligent works such as selecting, combining and aggregating the data are performed by human[citation: A Semantic Web Primer, series foreword, xvi].
+% \\\\
+% Semantic web concepts and techniques have been established to conquer the above issues. The fundamental goal of the semantic web is to make data on the web more readable and understandable by the machines. First of all, resources on the web are uniquely identified by the Uniform Resource Identifiers (URIs). The URIs are used for distinguishing resource in the Resource Description Framework (RDF), the predominant method of conceptually describing and modeling information [citation: ?]. RDF serves as a standard and universal principle of data modeling, so that datasets from distributed sources that are referencing the same resources in the same knowledge domain can be combined together without confusion. Further more, data expressed in RDF are made available in structured and standarised formats that can be easily fetched by computers using a query language such as SPARQL [? citation], increasing the usability of data dramatically.
+% \\\\
+% Based on the concept of the semantic web, the research of data integration propose the approach where integration of information coming from multiple local sources is performed without first loading the data into a central warehouse [Chawathe et al. 1994; Wache et al. 2001; Draper et al. 2001; --Halevy et al. 2005--; Seligman et al. 2010; Doan et al. 2012;]\cite{placeholder}. This is achieved with the use of ontologies [? citation]. Ontologies provide a shared understanding of a domain by explicitly and formally specifying the concepts in the domain [? citation]. OWL 2, being the current standard of ontology languages, is based on RDF. This structure makes the inter-operation across multiple local sources possible. First, a common ontology need to be built as an inter-connection between the ontologies of the domains where the data are sourced from [Ontology matching, 10]. A query posed over the common ontology are decomposed into multiple queries over the domain ontologies of the respective datasets. This process is known as ontology matching [citation].
+% \\\\
+% Although various automatic methods for matching data and ontologies have been proposed \cite{placeholder}, correspondences are usually manually defined by domain experts for guaranteed correctness [citation]. This is because that the correctness of matching results cannot be guaranteed without domain expert knowledge. The challenge is arisen from the strategy used to match ontologies. For example, terminologies with similar names can have completely different semantics or meanings, and entries in different datasets can represent the same terminology but have different data-types or units or measuring standards. Although methods exist for quantifying the level of certainty [citation], they do not target for the application of data integration, where the level of correctness can be potentially increased. This project looks specifically into the matching process of ABoxes to target this issue.
+% \\\\
+% Description logics (DLs) are a family of knowledge representation languages that can be used to represent knowledge of an application domain in a structured and well-understood way [Citation: An Introduction to Description Logic, 1] \cite{placeholder}. Recently, DLs have played a central role in the semantic web [Hor08], having been adopted as the basis for ontology languages [HPSvH03]. They typically separate domain knowledge into two components: the terminological part TBox and the assertional part ABox, where the combination of a TBox and an ABox is called a knowledge base (KB) [Citation: An Introduction to Description Logic, 1] \cite{placeholder}. A crucial feature of DLs is that terminological and assertional statements have a formal logic-based semantics, meaning that entailments of such statements in a knowledge base can be determined through automated reasoning [Citation: An Introduction to Description Logic, 1] \cite{placeholder}.
+
+
+\section{Aims and Objectives}
+
+% (0.5 page) The aim is usually a single sentence describing at a high-level what the point of the project is and what will be achieved.
+% The objectives are sub-components of the general aim, detailing the individual aspects which need to be achieved in order to deliver the aim(s).
+
+The aim of this project is to provide an automated solution for data integration, and to deliver an application as a tangible result. Specifically, this project attempts to come up with an ABox matching strategy suitable for the needs of data integration. In order to achieve this, the following objectives need to be reached:
+\begin{enumerate}[itemsep=1.1em]
+	\item Investigate and adopt existing algorithms and strategies to automate the production of a common ontology.
+	\item Explore and manipulate the strategies in the automation of ABox matching, to design one specifically suitable for data integration.
+	\item Investigate the semantic propagation and preservation in query answering.
+	\item Deliver a tangible implementation of the system.
+	\item Testing, evaluating, and potentially reasoning about the implementation.
+\end{enumerate}
+It should be noted that it is not the target of the project to achieve complete correctness, which is considered impractical without the aid of domain expert knowledge. Although, the level of precision and completeness is considered as one of the most central evaluation criterion, as well as the underlying reasonability and decidability of the logic.
+
+
+\section{Work Plan}
+
+% (1 page) Describing the tasks to be carried out.
+% The time plan should be realistic and should take into account other commitments such as exam periods, holidays, etc.
+% Inclusion of a Gantt chart is strongly recommended as a visual representing the project schedule.
+
+Although a general literature review in the field of semantic web and ontology matching have been carried out, as well as an investigation over the tools and software systems currently available, it is observed that a more comprehensive and thorough knowledge about the basics should be equipped due to the considerable theoretical concepts this project is going to relate. Therefore, the project starts with a learning phase where fundamental ideas including description logic, semantic web techniques and ontologies with rules are explored into details in their hierarchical order. The collection of suitable tools and investigation into the relevant APIs are carried along with the learning phase. Then a tangible framework that utilises a selection of currently existing strategies, reasoners and the APIs to automate the process will be implemented and evaluated, which should be delivered with the interim report.
+\\\\
+The next stage formalises the research into the area of ontology matching, specifically the matching of ABoxes, by alternating and extending the existing approaches to facilitate the discovery of an idea tailored for the need of data integration. The idea will then be validated, implemented, tested, evaluated, and go through a reasoning process if possible, where the results will be concluded in the final dissertation. A Gantt chart with specified stages, tasks, time arrangements and milestones is created with respect to the Waterfall methodology.
+\\\\
+
+\begin{figure}[htbp]
+\includegraphics[width=\textwidth]{img/Gantt.pdf}
+\caption{Gantt Chart}
+\label{fig:1}
+\end{figure}
+
+\begin{enumerate}[itemsep=0.1em,label=\Alph*.]
+	\item Write the project proposal and complete the ethics form.
+	\item General review of recent literatures, available tools and software systems.
+	\item Gathering of learning materials, advanced literatures, tools and systems.
+	\item Comprehensive study of description logic, specifically focusing on the specific language that forms the basis of OWL 2.
+	\item Comprehensive study of semantic web techniques, including RDF, OWL 2, rules, SPARQL and RuleML.
+	\item General study of ontology engineering strategies and algorithms.
+	\item Implementation of the framework, utilising APIs, algorithms and reasoning systems.
+	\item Preliminary testing and evaluation of the framework.
+	\item Write the Interim Report.
+	\item Update the implementation with respect to the feedback. Work load is reduced due to exam preparations.
+	\item Systematic investigation into ontology matching techniques, specifically focusing on ABox matching strategies.
+	\item Preliminary implementation of the tailored idea for data integration.
+	\item Validate idea with supervisor, obtain feedback.
+	\item Extend the implementation with the shaped idea and evaluation framework.
+	\item Systematic adjustment, testing and evaluation of the implementation with continuous feedback. Reasoning will be carried out if possible.
+	\item Write dissertation final report.
+	\item Prepare for demonstration.
+\end{enumerate}
+
+
+% Bibliography(0.5 page): Containing some key publications that are either explicitly referred to in the text \cite{Li2017}.
 
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliographystyle{acm}
 \bibliography{proposal}
 
-\input{tex/appendix}
+
+% \input{tex/appendix}
 
 \end{document}
