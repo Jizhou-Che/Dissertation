@@ -1,7 +1,970 @@
-#000 - A decision support system for urban infrastructure inter-asset management employing domain ontologies and qualitative uncertainty-based reasoning
-  - Keywords: ATU Ontologies, Qualitative uncertainty based reasoning, decision support;
-  - Level: 2;
+Semantic Web {
+	#006 {
+		Title: Semantic Heterogeneity: Problem and Solution Frameworks;
+		Year: 2005;
+		Type: Paper;
+		Keywords: semantic heterogeneity;
+		Level: 2;
+		BibTeX {
+			@article{Vaishnavi2005SemanticHP,
+			  title     = {Semantic Heterogeneity: Problem and Solution Frameworks},
+			  author    = {V. Vaishnavi and A. Vandenberg and G. Zheng and R. Singh},
+			  journal   = {Computing Letters},
+			  year      = {2005},
+			  volume    = {1},
+			  pages     = {75-82}
+			}
+		}
+	}
+	#010 {
+		Title: Semantic Integration Research in the Database Community: A Brief Survey;
+		Year: 2005;
+		Type: Paper;
+		Keywords: semantic integration, schema matching, data matching;
+		Level: 2;
+		BibTeX {
+			@article{DBLP:journals/aim/DoanH05,
+			  author    = {AnHai Doan and
+			               Alon Y. Halevy},
+			  title     = {Semantic Integration Research in the Database Community: {A} Brief
+			               Survey},
+			  journal   = {{AI} Mag.},
+			  volume    = {26},
+			  number    = {1},
+			  pages     = {83--94},
+			  year      = {2005},
+			  url       = {https://doi.org/10.1609/aimag.v26i1.1801},
+			  doi       = {10.1609/aimag.v26i1.1801},
+			  timestamp = {Tue, 25 Aug 2020 16:51:25 +0200},
+			  biburl    = {https://dblp.org/rec/journals/aim/DoanH05.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#012 {
+		Title: Networked graphs: a declarative mechanism for SPARQL rules, SPARQL views and RDF data integration on the web;
+		Year: 2008;
+		Type: Paper;
+		Keywords: networked graphs, SPARQL rules, RDF, data integration;
+		Level: 2;
+		BibTeX {
+			@inproceedings{DBLP:conf/www/SchenkS08,
+			  author    = {Simon Schenk and
+			               Steffen Staab},
+			  editor    = {Jinpeng Huai and
+			               Robin Chen and
+			               Hsiao{-}Wuen Hon and
+			               Yunhao Liu and
+			               Wei{-}Ying Ma and
+			               Andrew Tomkins and
+			               Xiaodong Zhang},
+			  title     = {Networked graphs: a declarative mechanism for {SPARQL} rules, {SPARQL}
+			               views and {RDF} data integration on the web},
+			  booktitle = {Proceedings of the 17th International Conference on World Wide Web,
+			               {WWW} 2008, Beijing, China, April 21-25, 2008},
+			  pages     = {585--594},
+			  publisher = {{ACM}},
+			  year      = {2008},
+			  url       = {https://doi.org/10.1145/1367497.1367577},
+			  doi       = {10.1145/1367497.1367577},
+			  timestamp = {Tue, 06 Nov 2018 16:57:10 +0100},
+			  biburl    = {https://dblp.org/rec/conf/www/SchenkS08.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#016 {
+		Title: Linked data on the web (LDOW2008);
+		Year: 2008;
+		Type: Paper;
+		Keywords: summary, linked open data;
+		Level: 2;
+		BibTeX {
+			@inproceedings{DBLP:conf/www/BizerHIB08,
+			  author    = {Christian Bizer and
+			               Tom Heath and
+			               Kingsley Idehen and
+			               Tim Berners{-}Lee},
+			  editor    = {Jinpeng Huai and
+			               Robin Chen and
+			               Hsiao{-}Wuen Hon and
+			               Yunhao Liu and
+			               Wei{-}Ying Ma and
+			               Andrew Tomkins and
+			               Xiaodong Zhang},
+			  title     = {Linked data on the web {(LDOW2008)}},
+			  booktitle = {Proceedings of the 17th International Conference on World Wide Web,
+			               {WWW} 2008, Beijing, China, April 21-25, 2008},
+			  pages     = {1265--1266},
+			  publisher = {{ACM}},
+			  year      = {2008},
+			  url       = {https://doi.org/10.1145/1367497.1367760},
+			  doi       = {10.1145/1367497.1367760},
+			  timestamp = {Wed, 14 Nov 2018 10:55:40 +0100},
+			  biburl    = {https://dblp.org/rec/conf/www/BizerHIB08.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#024 {
+		Title: Tabulator: Exploring and analyzing linked data on the semantic web;
+		Year: 2006;
+		Type: Paper;
+		Keywords: linked data, semantic web;
+		Level: 3;
+		BibTeX {
+			@inproceedings{berners2006tabulator,
+			  title     = {Tabulator: Exploring and analyzing linked data on the semantic web},
+			  author    = {Berners-Lee, Tim and Chen, Yuhsin and Chilton, Lydia and Connolly, Dan and Dhanaraj, Ruth and Hollenbach, James and Lerer, Adam and Sheets, David}
+			}
+		}
+	}
+}
 
-#001 - ATU-DSS: Knowledge-Driven Data Integration and Reasoning for Sustainable Subsurface Inter-Asset Management
-  - Keywords: Summary of #000;
-  - Level: 0;
+OWL {
+	#004 {
+		Title: From SHIQ and RDF to OWL: the making of a Web Ontology Language;
+		Year: 2003;
+		Type: Paper;
+		Keywords: description logic, OWL;
+		Level: 3;
+		BibTeX {
+			@article{DBLP:journals/ws/HorrocksPH03,
+			  author    = {Ian Horrocks and
+			               Peter F. Patel{-}Schneider and
+			               Frank van Harmelen},
+			  title     = {From {SHIQ} and {RDF} to {OWL:} the making of a Web Ontology Language},
+			  journal   = {J. Web Semant.},
+			  volume    = {1},
+			  number    = {1},
+			  pages     = {7--26},
+			  year      = {2003},
+			  url       = {https://doi.org/10.1016/j.websem.2003.07.001},
+			  doi       = {10.1016/j.websem.2003.07.001},
+			  timestamp = {Tue, 29 Jan 2019 12:27:03 +0100},
+			  biburl    = {https://dblp.org/rec/journals/ws/HorrocksPH03.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+}
+
+Ontology {
+	#005 {
+		Title: The use of ontologies for effective knowledge modelling and information retrieval;
+		Year: 2018;
+		Type: Paper;
+		Keywords: knowledge representation, ontology;
+		Level: 3;
+		BibTeX {
+			@article{MUNIR2018116,
+			  title     = "The use of ontologies for effective knowledge modelling and information retrieval",
+			  journal   = "Applied Computing and Informatics",
+			  volume    = "14",
+			  number    = "2",
+			  pages     = "116 - 126",
+			  year      = "2018",
+			  issn      = "2210-8327",
+			  doi       = "https://doi.org/10.1016/j.aci.2017.07.003",
+			  url       = "http://www.sciencedirect.com/science/article/pii/S2210832717300649",
+			  author    = "Kamran Munir and M. {Sheraz Anjum}",
+			  keywords  = "Information systems, Ontology, Domain knowledge, Database, Information retrieval, Knowledge management",
+			}
+		}
+	}
+	#007 {
+		Title: An automatic procedure to create fuzzy ontologies from users' opinions using sentiment analysis procedures and multi-granular fuzzy linguistic modelling methods;
+		Year: 2019;
+		Type: Paper;
+		Keywords: fuzzy ontology;
+		Level: 1;
+		BibTeX {
+			@article{DBLP:journals/isci/Morente-Molinera19,
+			  author    = {Juan Antonio Morente{-}Molinera and
+			               Gang Kou and
+			               C. Pang and
+			               Francisco Javier Cabrerizo and
+			               Enrique Herrera{-}Viedma},
+			  title     = {An automatic procedure to create fuzzy ontologies from users' opinions
+			               using sentiment analysis procedures and multi-granular fuzzy linguistic
+			               modelling methods},
+			  journal   = {Inf. Sci.},
+			  volume    = {476},
+			  pages     = {222--238},
+			  year      = {2019},
+			  url       = {https://doi.org/10.1016/j.ins.2018.10.022},
+			  doi       = {10.1016/j.ins.2018.10.022},
+			  timestamp = {Fri, 27 Dec 2019 21:14:20 +0100},
+			  biburl    = {https://dblp.org/rec/journals/isci/Morente-Molinera19.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#008 {
+		Title: Ontologies for geospatial information: Progress and challenges ahead;
+		Year: 2020;
+		Type: Paper;
+		Keywords: ontology, geospatial information;
+		Level: 1;
+		BibTeX {
+			@article{Claramunt2020OntologiesFG,
+			  title     = {Ontologies for geospatial information: Progress and challenges ahead},
+			  author    = {Christophe Claramunt},
+			  journal   = {Journal of Spatial Information Science},
+			  year      = {2020}
+			}
+		}
+	}
+	#017 {
+		Title: Ontologies and the semantic web;
+		Year: 2008;
+		Type: Paper;
+		Keywords: ontology, semantic web, OWL, ontology reasoning, ontology application;
+		Level: 5;
+		BibTeX {
+			@article{DBLP:journals/cacm/Horrocks08,
+			  author    = {Ian Horrocks},
+			  title     = {Ontologies and the semantic web},
+			  journal   = {Commun. {ACM}},
+			  volume    = {51},
+			  number    = {12},
+			  pages     = {58--67},
+			  year      = {2008},
+			  url       = {https://doi.org/10.1145/1409360.1409377},
+			  doi       = {10.1145/1409360.1409377},
+			  timestamp = {Wed, 14 Nov 2018 10:22:36 +0100},
+			  biburl    = {https://dblp.org/rec/journals/cacm/Horrocks08.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#022 {
+		Title: An Ontology of Soil Properties and Processes;
+		Year: 2016;
+		Type: Paper;
+		Keywords: ontology, application;
+		Level: 1;
+		BibTeX {
+			@inproceedings{DBLP:conf/semweb/DuDMSCRCC16,
+			  author    = {Heshan Du and
+			               Vania Dimitrova and
+			               Derek R. Magee and
+			               Ross Stirling and
+			               Giulio Curioni and
+			               Helen Reeves and
+			               Barry Clarke and
+			               Anthony G. Cohn},
+			  editor    = {Paul Groth and
+			               Elena Simperl and
+			               Alasdair J. G. Gray and
+			               Marta Sabou and
+			               Markus Kr{\"{o}}tzsch and
+			               Freddy L{\'{e}}cu{\'{e}} and
+			               Fabian Fl{\"{o}}ck and
+			               Yolanda Gil},
+			  title     = {An Ontology of Soil Properties and Processes},
+			  booktitle = {The Semantic Web - {ISWC} 2016 - 15th International Semantic Web Conference,
+			               Kobe, Japan, October 17-21, 2016, Proceedings, Part {II}},
+			  series    = {Lecture Notes in Computer Science},
+			  volume    = {9982},
+			  pages     = {30--37},
+			  year      = {2016},
+			  url       = {https://doi.org/10.1007/978-3-319-46547-0\_4},
+			  doi       = {10.1007/978-3-319-46547-0\_4},
+			  timestamp = {Sun, 25 Oct 2020 22:58:45 +0100},
+			  biburl    = {https://dblp.org/rec/conf/semweb/DuDMSCRCC16.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+}
+
+Ontology Matching {
+	#002 {
+		Title: Ontology matching;
+		Year: 2013;
+		Type: Book;
+		Keywords: ontology matching;
+		Level: 5;
+		BibTeX {
+			@book{euzenat2013d,
+			  author    = {J\'er\^ome Euzenat and Pavel Shvaiko},
+			  title     = {Ontology matching},
+			  edition   = {2nd},
+			  language  = {english},
+			  page      = 520,
+			  publisher = {Springer-Verlag},
+			  address   = {Heidelberg (DE)},
+			  year      = 2013,
+			  url       = {http://book.ontologymatching.org},
+			  isbn      = {978-3-642-38720-3}
+			}
+		}
+	}
+	#003 {
+		Title: Ontology matching: A literature review;
+		Year: 2015;
+		Type: Paper;
+		Keywords: ontology matching, literature review;
+		Level: 5;
+		BibTeX {
+			@article{DBLP:journals/eswa/Otero-CerdeiraRG15,
+			  author    = {Lorena Otero{-}Cerdeira and
+			               Francisco Javier Rodr{\'{\i}}guez{-}Mart{\'{\i}}nez and
+			               Alma G{\'{o}}mez{-}Rodr{\'{\i}}guez},
+			  title     = {Ontology matching: {A} literature review},
+			  journal   = {Expert Syst. Appl.},
+			  volume    = {42},
+			  number    = {2},
+			  pages     = {949--971},
+			  year      = {2015},
+			  url       = {https://doi.org/10.1016/j.eswa.2014.08.032},
+			  doi       = {10.1016/j.eswa.2014.08.032},
+			  timestamp = {Tue, 06 Jun 2017 22:26:24 +0200},
+			  biburl    = {https://dblp.org/rec/journals/eswa/Otero-CerdeiraRG15.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#011 {
+		Title: Matching Formal and Informal Geospatial Ontologies;
+		Year: 2013;
+		Type: Paper;
+		Keywords: ontology matching, geospatial ontologies;
+		Level: 5;
+		BibTeX {
+			@inproceedings{DBLP:conf/agile/DuA0H13,
+			  author    = {Heshan Du and
+			               Natasha Alechina and
+			               Mike Jackson and
+			               Glen Hart},
+			  editor    = {Danny Vandenbroucke and
+			               B{\'{e}}n{\'{e}}dicte Bucher and
+			               Joep Crompvoets},
+			  title     = {Matching Formal and Informal Geospatial Ontologies},
+			  booktitle = {Geographic Information Science at the Heart of Europe - International
+			               AGILE'2013 Conference, Leuven, Belgium, 14-17 May 2013},
+			  series    = {Lecture Notes in Geoinformation and Cartography},
+			  pages     = {155--171},
+			  publisher = {Springer},
+			  year      = {2013},
+			  url       = {https://doi.org/10.1007/978-3-319-00615-4\_9},
+			  doi       = {10.1007/978-3-319-00615-4\_9},
+			  timestamp = {Sun, 02 Jun 2019 21:10:54 +0200},
+			  biburl    = {https://dblp.org/rec/conf/agile/DuA0H13.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#013 {
+		Title: On the Ontology Instance Matching Problem;
+		Year: 2008;
+		Type: Paper;
+		Keywords: instance matching;
+		Level: 4;
+		BibTeX {
+			@inproceedings{DBLP:conf/dexaw/CastanoFLM08,
+			  author    = {Silvana Castano and
+			               Alfio Ferrara and
+			               Davide Lorusso and
+			               Stefano Montanelli},
+			  title     = {On the Ontology Instance Matching Problem},
+			  booktitle = {19th International Workshop on Database and Expert Systems Applications
+			               {(DEXA} 2008), 1-5 September 2008, Turin, Italy},
+			  pages     = {180--184},
+			  publisher = {{IEEE} Computer Society},
+			  year      = {2008},
+			  url       = {https://doi.org/10.1109/DEXA.2008.31},
+			  doi       = {10.1109/DEXA.2008.31},
+			  timestamp = {Wed, 16 Oct 2019 14:14:55 +0200},
+			  biburl    = {https://dblp.org/rec/conf/dexaw/CastanoFLM08.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#014 {
+		Title: Ontology Matching: State of the Art and Future Challenges;
+		Year: 2013;
+		Type: Paper;
+		Keywords: ontology matching, challenges;
+		Level: 5;
+		BibTeX {
+			@article{DBLP:journals/tkde/ShvaikoE13,
+			  author    = {Pavel Shvaiko and
+			               J{\'{e}}r{\^{o}}me Euzenat},
+			  title     = {Ontology Matching: State of the Art and Future Challenges},
+			  journal   = {{IEEE} Trans. Knowl. Data Eng.},
+			  volume    = {25},
+			  number    = {1},
+			  pages     = {158--176},
+			  year      = {2013},
+			  url       = {https://doi.org/10.1109/TKDE.2011.253},
+			  doi       = {10.1109/TKDE.2011.253},
+			  timestamp = {Wed, 14 Nov 2018 10:17:28 +0100},
+			  biburl    = {https://dblp.org/rec/journals/tkde/ShvaikoE13.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#015 {
+		Title: Data mining-based approach for ontology matching problem;
+		Year: 2020;
+		Type: Paper;
+		Keywords: ontology matching, data mining;
+		Level: 5;
+		BibTeX {
+			@article{DBLP:journals/apin/BelhadiADL20,
+			  author    = {Hiba Belhadi and
+			               Karima Akli{-}Astouati and
+			               Youcef Djenouri and
+			               Jerry Chun{-}Wei Lin},
+			  title     = {Data mining-based approach for ontology matching problem},
+			  journal   = {Appl. Intell.},
+			  volume    = {50},
+			  number    = {4},
+			  pages     = {1204--1221},
+			  year      = {2020},
+			  url       = {https://doi.org/10.1007/s10489-019-01593-3},
+			  doi       = {10.1007/s10489-019-01593-3},
+			  timestamp = {Thu, 06 Aug 2020 21:47:16 +0200},
+			  biburl    = {https://dblp.org/rec/journals/apin/BelhadiADL20.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#023 {
+		Title: Enhanced Ontology Matching for Big Data Integration;
+		Year: 2020;
+		Type: Paper;
+		Keywords: ontology matching, big data integration;
+		Level: 4;
+		BibTeX {
+			@inproceedings{mahmoud2020enhanced,
+			  title        = {Enhanced Ontology Matching for Big Data Integration},
+			  author       = {Mahmoud, Nesma and Abdlkader, Hatem M},
+			  booktitle    = {Journal of Physics: Conference Series},
+			  volume       = {1447},
+			  number       = {1},
+			  pages        = {012028},
+			  year         = {2020},
+			  organization = {IOP Publishing}
+			}
+		}
+	}
+	#027 {
+		Title: Effective Instance Matching for Heterogeneous Structured Data;
+		Year: 2014;
+		Type: Paper;
+		Keywords: instance matching, heterogeneous data;
+		Level: 3;
+		BibTeX {
+			@phdthesis{DBLP:phd/dnb/Ma14,
+			  author    = {Yongtao Ma},
+			  title     = {Effective Instance Matching for Heterogeneous Structured Data},
+			  school    = {Karlsruhe Institute of Technology},
+			  year      = {2014},
+			  url       = {http://digbib.ubka.uni-karlsruhe.de/volltexte/1000044930},
+			  urn       = {urn:nbn:de:swb:90-449304},
+			  timestamp = {Wed, 12 Feb 2020 16:42:05 +0100},
+			  biburl    = {https://dblp.org/rec/phd/dnb/Ma14.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#028 {
+		Title: Ontology-based Instance Matching for Geospatial Urban Data Integration;
+		Year: 2017;
+		Type: Paper;
+		Keywords: instance matching, geospatial data integration;
+		Level: 5;
+		BibTeX {
+			@inproceedings{DBLP:conf/gis/ShivaprabhuBC17,
+			  author    = {Vivek R. Shivaprabhu and
+			               Booma Sowkarthiga Balasubramani and
+			               Isabel F. Cruz},
+			  editor    = {Huy T. Vo and
+			               Bill Howe},
+			  title     = {Ontology-based Instance Matching for Geospatial Urban Data Integration},
+			  booktitle = {Proceedings of the 3rd {ACM} {SIGSPATIAL} Workshop on Smart Cities
+			               and Urban Analytics, Redondo Beach, CA, USA, November 7, 2017},
+			  pages     = {8:1--8:8},
+			  publisher = {{ACM}},
+			  year      = {2017},
+			  url       = {https://doi.org/10.1145/3152178.3152186},
+			  doi       = {10.1145/3152178.3152186},
+			  timestamp = {Tue, 06 Nov 2018 11:07:36 +0100},
+			  biburl    = {https://dblp.org/rec/conf/gis/ShivaprabhuBC17.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#033 {
+		Title: Towards evaluating complex ontology alignments;
+		Year: 2020;
+		Type: Paper;
+		Keywords: complex ontology alignment, evaluation;
+		Level: 3;
+		BibTeX {
+			@article{DBLP:journals/ker/ZhouTCFPSZ20,
+			  author    = {Lu Zhou and
+			               {\'{E}}lodie Thi{\'{e}}blin and
+			               Michelle Cheatham and
+			               Daniel Faria and
+			               Catia Pesquita and
+			               C{\'{a}}ssia Trojahn dos Santos and
+			               Ondrej Zamazal},
+			  title     = {Towards evaluating complex ontology alignments},
+			  journal   = {Knowl. Eng. Rev.},
+			  volume    = {35},
+			  pages     = {e21},
+			  year      = {2020},
+			  url       = {https://doi.org/10.1017/S0269888920000168},
+			  doi       = {10.1017/S0269888920000168},
+			  timestamp = {Thu, 27 Aug 2020 13:19:47 +0200},
+			  biburl    = {https://dblp.org/rec/journals/ker/ZhouTCFPSZ20.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#034 {
+		Title: A consensual dataset for complex ontology matching evaluation;
+		Year: 2020;
+		Type: Paper;
+		Keywords: ontology matching, dataset;
+		Level: 3;
+		BibTeX {
+			@article{DBLP:journals/ker/ThieblinCTZ20,
+			  author    = {{\'{E}}lodie Thi{\'{e}}blin and
+			               Michelle Cheatham and
+			               C{\'{a}}ssia Trojahn and
+			               Ondrej Zamazal},
+			  title     = {A consensual dataset for complex ontology matching evaluation},
+			  journal   = {Knowl. Eng. Rev.},
+			  volume    = {35},
+			  pages     = {e34},
+			  year      = {2020},
+			  url       = {https://doi.org/10.1017/S0269888920000247},
+			  doi       = {10.1017/S0269888920000247},
+			  timestamp = {Thu, 27 Aug 2020 13:19:48 +0200},
+			  biburl    = {https://dblp.org/rec/journals/ker/ThieblinCTZ20.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#035 {
+		Title: Ontologies-Based Domain Knowledge Modeling and Heterogeneous Sensor Data Integration for Bridge Health Monitoring Systems;
+		Year: 2021;
+		Type: Paper;
+		Keywords: ontology matching, data integration, application;
+		Level: 5;
+		BibTeX {
+			@article{DBLP:journals/tii/LiMYJLL21,
+			  author    = {Ren Li and
+			               Tianjin Mo and
+			               Jianxi Yang and
+			               Shixin Jiang and
+			               Tong Li and
+			               Yiming Liu},
+			  title     = {Ontologies-Based Domain Knowledge Modeling and Heterogeneous Sensor
+			               Data Integration for Bridge Health Monitoring Systems},
+			  journal   = {{IEEE} Trans. Ind. Informatics},
+			  volume    = {17},
+			  number    = {1},
+			  pages     = {321--332},
+			  year      = {2021},
+			  url       = {https://doi.org/10.1109/TII.2020.2967561},
+			  doi       = {10.1109/TII.2020.2967561},
+			  timestamp = {Sat, 14 Nov 2020 00:56:25 +0100},
+			  biburl    = {https://dblp.org/rec/journals/tii/LiMYJLL21.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+}
+
+Matching System {
+	#029 {
+		Title: LogMap Family Participation in the OAEI 2019;
+		Year: 2019;
+		Type: Paper;
+		Keywords: LogMap family, ontology matching, evaluation;
+		Level: 4;
+		BibTeX {
+			@inproceedings{DBLP:conf/semweb/Jimenez-Ruiz19,
+			  author    = {Ernesto Jim{\'{e}}nez{-}Ruiz},
+			  editor    = {Pavel Shvaiko and
+			               J{\'{e}}r{\^{o}}me Euzenat and
+			               Ernesto Jim{\'{e}}nez{-}Ruiz and
+			               Oktie Hassanzadeh and
+			               C{\'{a}}ssia Trojahn},
+			  title     = {LogMap Family Participation in the {OAEI} 2019},
+			  booktitle = {Proceedings of the 14th International Workshop on Ontology Matching
+			               co-located with the 18th International Semantic Web Conference {(ISWC}
+			               2019), Auckland, New Zealand, October 26, 2019},
+			  series    = {{CEUR} Workshop Proceedings},
+			  volume    = {2536},
+			  pages     = {160--163},
+			  publisher = {CEUR-WS.org},
+			  year      = {2019},
+			  url       = {http://ceur-ws.org/Vol-2536/oaei19\_paper11.pdf},
+			  timestamp = {Wed, 12 Feb 2020 16:44:50 +0100},
+			  biburl    = {https://dblp.org/rec/conf/semweb/Jimenez-Ruiz19.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#030 {
+		Title: SANOM-HOBBIT: simulated annealing-based ontology matching on HOBBIT platform;
+		Year: 2020;
+		Type: Paper;
+		Keywords: SANOM, HOBBIT, simulated annealing, ontology matching;
+		Level: 4;
+		BibTeX {
+			@article{DBLP:journals/ker/MohammadiHT20,
+			  author    = {Majid Mohammadi and
+			               Wout Hofman and
+			               Yao{-}Hua Tan},
+			  title     = {{SANOM-HOBBIT:} simulated annealing-based ontology matching on {HOBBIT}
+			               platform},
+			  journal   = {Knowl. Eng. Rev.},
+			  volume    = {35},
+			  pages     = {e13},
+			  year      = {2020},
+			  url       = {https://doi.org/10.1017/S026988892000017X},
+			  doi       = {10.1017/S026988892000017X},
+			  timestamp = {Thu, 27 Aug 2020 13:20:05 +0200},
+			  biburl    = {https://dblp.org/rec/journals/ker/MohammadiHT20.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#031 {
+		Title: RiMOM: A Dynamic Multistrategy Ontology Alignment Framework;
+		Year: 2009;
+		Type: Paper;
+		Keywords: RiMOM, ontology alignment;
+		Level: 3;
+		BibTeX {
+			@article{DBLP:journals/tkde/LiTLL09,
+			  author    = {Juanzi Li and
+			               Jie Tang and
+			               Yi Li and
+			               Qiong Luo},
+			  title     = {RiMOM: {A} Dynamic Multistrategy Ontology Alignment Framework},
+			  journal   = {{IEEE} Trans. Knowl. Data Eng.},
+			  volume    = {21},
+			  number    = {8},
+			  pages     = {1218--1232},
+			  year      = {2009},
+			  url       = {https://doi.org/10.1109/TKDE.2008.202},
+			  doi       = {10.1109/TKDE.2008.202},
+			  timestamp = {Mon, 26 Oct 2020 08:28:34 +0100},
+			  biburl    = {https://dblp.org/rec/journals/tkde/LiTLL09.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#032 {
+		Title: RiMOM-IM: A Novel Iterative Framework for Instance Matching;
+		Year: 2016;
+		Type: Paper;
+		Keywords: RiMOM, instance matching;
+		Level: 4;
+		BibTeX {
+			@article{DBLP:journals/jcst/ShaoHLWCX16,
+			  author    = {Chao Shao and
+			               Linmei Hu and
+			               Juan{-}Zi Li and
+			               Zhichun Wang and
+			               Tong Lee Chung and
+			               Jun{-}Bo Xia},
+			  title     = {RiMOM-IM: {A} Novel Iterative Framework for Instance Matching},
+			  journal   = {J. Comput. Sci. Technol.},
+			  volume    = {31},
+			  number    = {1},
+			  pages     = {185--197},
+			  year      = {2016},
+			  url       = {https://doi.org/10.1007/s11390-016-1620-z},
+			  doi       = {10.1007/s11390-016-1620-z},
+			  timestamp = {Sun, 28 May 2017 13:21:15 +0200},
+			  biburl    = {https://dblp.org/rec/journals/jcst/ShaoHLWCX16.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+}
+
+Knowledge Graph {
+	#019 {
+		Title: Knowledge Graph Embedding: A Survey of Approaches and Applications;
+		Year: 2017;
+		Type: Paper;
+		Keywords: knowledge graph embedding;
+		Level: 3;
+		BibTeX {
+			@article{DBLP:journals/tkde/WangMWG17,
+			  author    = {Quan Wang and
+			               Zhendong Mao and
+			               Bin Wang and
+			               Li Guo},
+			  title     = {Knowledge Graph Embedding: {A} Survey of Approaches and Applications},
+			  journal   = {{IEEE} Trans. Knowl. Data Eng.},
+			  volume    = {29},
+			  number    = {12},
+			  pages     = {2724--2743},
+			  year      = {2017},
+			  url       = {https://doi.org/10.1109/TKDE.2017.2754499},
+			  doi       = {10.1109/TKDE.2017.2754499},
+			  timestamp = {Wed, 15 Jul 2020 09:05:51 +0200},
+			  biburl    = {https://dblp.org/rec/journals/tkde/WangMWG17.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#020 {
+		Title: Knowledge Graph Embedding for Link Prediction: A Comparative Analysis;
+		Year: 2020;
+		Type: Paper;
+		Keywords: knowledge graph embedding, link prediction;
+		Level: 4;
+		BibTeX {
+			@article{DBLP:journals/corr/abs-2002-00819,
+			  author    = {Andrea Rossi and
+			               Donatella Firmani and
+			               Antonio Matinata and
+			               Paolo Merialdo and
+			               Denilson Barbosa},
+			  title     = {Knowledge Graph Embedding for Link Prediction: {A} Comparative Analysis},
+			  journal   = {CoRR},
+			  volume    = {abs/2002.00819},
+			  year      = {2020},
+			  url       = {https://arxiv.org/abs/2002.00819},
+			  archivePrefix = {arXiv},
+			  eprint    = {2002.00819},
+			  timestamp = {Mon, 10 Feb 2020 15:12:57 +0100},
+			  biburl    = {https://dblp.org/rec/journals/corr/abs-2002-00819.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#026 {
+		Title: A Survey on Knowledge Graphs: Representation, Acquisition and Applications;
+		Year: 2020;
+		Type: Paper;
+		Keywords: knowledge graph;
+		Level: 4;
+		BibTeX {
+			@article{DBLP:journals/corr/abs-2002-00388,
+			  author    = {Shaoxiong Ji and
+			               Shirui Pan and
+			               Erik Cambria and
+			               Pekka Marttinen and
+			               Philip S. Yu},
+			  title     = {A Survey on Knowledge Graphs: Representation, Acquisition and Applications},
+			  journal   = {CoRR},
+			  volume    = {abs/2002.00388},
+			  year      = {2020},
+			  url       = {https://arxiv.org/abs/2002.00388},
+			  archivePrefix = {arXiv},
+			  eprint    = {2002.00388},
+			  timestamp = {Mon, 10 Feb 2020 15:12:57 +0100},
+			  biburl    = {https://dblp.org/rec/journals/corr/abs-2002-00388.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+}
+
+Application {
+	#000 {
+		Title: A decision support system for urban infrastructure inter-asset management employing domain ontologies and qualitative uncertainty-based reasoning;
+		Year: 2020;
+		Type: Paper;
+		Keywords: ATU ontologies, qualitative uncertainty based reasoning, application in decision support;
+		Level: 2;
+		BibTeX {
+			@article{DBLP:journals/eswa/WeiDMAMCDGERC20,
+			  author    = {Lijun Wei and
+			               Heshan Du and
+			               Quratul{-}ain Mahesar and
+			               Kareem Al Ammari and
+			               Derek R. Magee and
+			               Barry Clarke and
+			               Vania Dimitrova and
+			               David Gunn and
+			               David Entwisle and
+			               Helen Reeves and
+			               Anthony G. Cohn},
+			  title     = {A decision support system for urban infrastructure inter-asset management
+			               employing domain ontologies and qualitative uncertainty-based reasoning},
+			  journal   = {Expert Syst. Appl.},
+			  volume    = {158},
+			  pages     = {113461},
+			  year      = {2020},
+			  url       = {https://doi.org/10.1016/j.eswa.2020.113461},
+			  doi       = {10.1016/j.eswa.2020.113461},
+			  timestamp = {Sat, 19 Sep 2020 13:17:50 +0200},
+			  biburl    = {https://dblp.org/rec/journals/eswa/WeiDMAMCDGERC20.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#001 {
+		Title: ATU-DSS: Knowledge-Driven Data Integration and Reasoning for Sustainable Subsurface Inter-asset Management;
+		Year: 2018;
+		Type: Paper;
+		Keywords: summary of #000;
+		Level: 0;
+		BibTeX {
+			@inproceedings{DBLP:conf/esws/WeiDMCMDGERC18,
+			  author    = {Lijun Wei and
+			               Heshan Du and
+			               Quratul{-}ain Mahesar and
+			               Barry Clarke and
+			               Derek R. Magee and
+			               Vania Dimitrova and
+			               David Gunn and
+			               David Entwisle and
+			               Helen Reeves and
+			               Anthony G. Cohn},
+			  editor    = {Aldo Gangemi and
+			               Anna Lisa Gentile and
+			               Andrea Giovanni Nuzzolese and
+			               Sebastian Rudolph and
+			               Maria Maleshkova and
+			               Heiko Paulheim and
+			               Jeff Z. Pan and
+			               Mehwish Alam},
+			  title     = {{ATU-DSS:} Knowledge-Driven Data Integration and Reasoning for Sustainable
+			               Subsurface Inter-asset Management},
+			  booktitle = {The Semantic Web: {ESWC} 2018 Satellite Events - {ESWC} 2018 Satellite
+			               Events, Heraklion, Crete, Greece, June 3-7, 2018, Revised Selected
+			               Papers},
+			  series    = {Lecture Notes in Computer Science},
+			  volume    = {11155},
+			  pages     = {8--13},
+			  publisher = {Springer},
+			  year      = {2018},
+			  url       = {https://doi.org/10.1007/978-3-319-98192-5\_2},
+			  doi       = {10.1007/978-3-319-98192-5\_2},
+			  timestamp = {Wed, 25 Sep 2019 18:19:48 +0200},
+			  biburl    = {https://dblp.org/rec/conf/esws/WeiDMCMDGERC18.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#009 {
+		Title: Automated Reasoning for City Infrastructure Maintenance Decision Support;
+		Year: 2018;
+		Type: Paper;
+		Keywords: application in decision support;
+		Level: 1;
+		BibTeX {
+			@inproceedings{DBLP:conf/ijcai/WeiMDCDMAC18,
+			  author    = {Lijun Wei and
+			               Derek R. Magee and
+			               Vania Dimitrova and
+			               Barry Clarke and
+			               Heshan Du and
+			               Quratul{-}ain Mahesar and
+			               Kareem Al Ammari and
+			               Anthony G. Cohn},
+			  editor    = {J{\'{e}}r{\^{o}}me Lang},
+			  title     = {Automated Reasoning for City Infrastructure Maintenance Decision Support},
+			  booktitle = {Proceedings of the Twenty-Seventh International Joint Conference on
+			               Artificial Intelligence, {IJCAI} 2018, July 13-19, 2018, Stockholm,
+			               Sweden},
+			  pages     = {5877--5879},
+			  publisher = {ijcai.org},
+			  year      = {2018},
+			  url       = {https://doi.org/10.24963/ijcai.2018/868},
+			  doi       = {10.24963/ijcai.2018/868},
+			  timestamp = {Tue, 20 Aug 2019 16:19:08 +0200},
+			  biburl    = {https://dblp.org/rec/conf/ijcai/WeiMDCDMAC18.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#018 {
+		Title: Uncertainty Management for Rule-Based Decision Support Systems;
+		Year: 2017;
+		Type: Paper;
+		Keywords: application in decision support, uncertainty management;
+		Level: 1;
+		BibTeX {
+			@inproceedings{DBLP:conf/ictai/MahesarDMC17,
+			  author    = {Quratul{-}ain Mahesar and
+			               Vania Dimitrova and
+			               Derek R. Magee and
+			               Anthony G. Cohn},
+			  title     = {Uncertainty Management for Rule-Based Decision Support Systems},
+			  booktitle = {29th {IEEE} International Conference on Tools with Artificial Intelligence,
+			               {ICTAI} 2017, Boston, MA, USA, November 6-8, 2017},
+			  pages     = {884--891},
+			  publisher = {{IEEE} Computer Society},
+			  year      = {2017},
+			  url       = {https://doi.org/10.1109/ICTAI.2017.00137},
+			  doi       = {10.1109/ICTAI.2017.00137},
+			  timestamp = {Wed, 16 Oct 2019 14:14:56 +0200},
+			  biburl    = {https://dblp.org/rec/conf/ictai/MahesarDMC17.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#021 {
+		Title: A decision support system to proactively manage subsurface utilities;
+		Year: 2017;
+		Type: Paper;
+		Keywords: application in decision support;
+		Level: 1;
+		BibTeX {
+			@inproceedings{clarke2017decision,
+			  title        = {A decision support system to proactively manage subsurface utilities},
+			  author       = {Clarke, Barry G and Magee, Derek and Dimitrova, Vania and Cohn, Anthony G and Du, Heshan and Mahesar, Quratul-ain and Sadeghioon, Ali M and Rogers, Chris DF and Gunn, David and Enwisle, David and others},
+			  booktitle    = {International Symposium for Next Generation Infrastructure 2017 Conference Proceedings},
+			  pages        = {99--108},
+			  year         = {2017},
+			  organization = {ISNGI}
+			}
+		}
+	}
+}
+
+Description Logic
+
+SPARQL
+
+RuleML
+
+Reasoner
+
+Data
+
+Miscellaneous {
+	#025 {
+		Title: A Logic of Directions;
+		Year: 2020;
+		Type: Paper;
+		Keywords: logic, directions;
+		Level: 3;
+		BibTeX {
+			@inproceedings{DBLP:conf/ijcai/DuAC20,
+			  author    = {Heshan Du and
+			               Natasha Alechina and
+			               Anthony G. Cohn},
+			  editor    = {Christian Bessiere},
+			  title     = {A Logic of Directions},
+			  booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on
+			               Artificial Intelligence, {IJCAI} 2020},
+			  pages     = {1695--1702},
+			  publisher = {ijcai.org},
+			  year      = {2020},
+			  url       = {https://doi.org/10.24963/ijcai.2020/235},
+			  doi       = {10.24963/ijcai.2020/235},
+			  timestamp = {Mon, 20 Jul 2020 12:38:52 +0200},
+			  biburl    = {https://dblp.org/rec/conf/ijcai/DuAC20.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+}

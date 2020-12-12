@@ -1,0 +1,79 @@
+Websites {
+	Ontology Matching {
+		http://www.ontologymatching.org;
+		Ontology Matching Workshop {
+			http://om2020.ontologymatching.org;
+		}
+		Ontology Alignment Evaluation Initiative (OAEI) {
+			http://oaei.ontologymatching.org;
+		}
+	}
+	International Semantic Web Conference (ISWC) {
+		https://iswc2020.semanticweb.org;
+	}
+	Journal of Web Semantics (editor: Ian Horrocks) {
+		https://www.journals.elsevier.com/journal-of-web-semantics;
+	}
+	OWL Primer {
+		https://www.w3.org/2007/OWL/wiki/Primer;
+	}
+	Linked Data Tools {
+		http://linkeddatatools.com;
+		Semantic web basics {
+			http://linkeddatatools.com/semantic-web-basics;
+		}
+	}
+	Computer Science Bibliography (dblp) {
+		https://dblp.org;
+		ISWC on dblp {
+			https://dblp.org/db/conf/semweb/index.html;
+		}
+	}
+}
+
+Lecture Notes {
+	Uli Sattler: Description Logic and Ontology Engineering {
+		http://www.cs.man.ac.uk/~sattler/;
+	}
+	Natasha Alechina: Knowledge Representation and Reasoning {
+		http://www.cs.nott.ac.uk/~psznza/G53KRR/;
+	}
+}
+
+Books {
+	An Introduction to Description Logic;
+	Ontology Matching;
+}
+
+Data {
+	City Infrastructure Assets Ontologies {
+		https://doi.org/10.5518/190;
+	}
+	Semantic Web for Earth and Environment Technology Ontology: SWEET Ontology Representation {
+		http://sweetontology.net/repr;
+	}
+	NCBO BioPortal {
+		https://bioportal.bioontology.org/;
+		SWEET on NCBO BioPortal {
+			https://bioportal.bioontology.org/ontologies/SWEET;
+		}
+	}
+	The Environment Ontology {
+		https://sites.google.com/site/environmentontology/Browse-EnvO;
+	}
+	Research Data Leeds Repository {
+		https://archive.researchdata.leeds.ac.uk;
+	}
+	UK open data {
+		https://data.gov.uk;
+	}
+	Open Data Nottingham {
+		https://www.opendatanottingham.org.uk/;
+	}
+	Ordnance Survey  {
+		https://www.ordnancesurvey.co.uk;
+	}
+	OpenStreetMap {
+		https://www.openstreetmap.org/;
+	}
+}
