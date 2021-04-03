@@ -119,6 +119,59 @@ Semantic Web {
 			}
 		}
 	}
+	#036 {
+		Title: Quality assessment for Linked Data: A Survey;
+		Year: 2016;
+		Type: Paper;
+		Keywords: linked open data, RDF;
+		Level: 1;
+		BibTeX {
+			@article{DBLP:journals/semweb/ZaveriRMPLA16,
+			  author    = {Amrapali Zaveri and
+			               Anisa Rula and
+			               Andrea Maurino and
+			               Ricardo Pietrobon and
+			               Jens Lehmann and
+			               S{\"{o}}ren Auer},
+			  title     = {Quality assessment for Linked Data: {A} Survey},
+			  journal   = {Semantic Web},
+			  volume    = {7},
+			  number    = {1},
+			  pages     = {63--93},
+			  year      = {2016},
+			  url       = {https://doi.org/10.3233/SW-150175},
+			  doi       = {10.3233/SW-150175},
+			  timestamp = {Sat, 05 Sep 2020 17:49:38 +0200},
+			  biburl    = {https://dblp.org/rec/journals/semweb/ZaveriRMPLA16.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#037 {
+		Title: Linked Data - The Story So Far;
+		Year: 2009;
+		Type: Paper;
+		Keywords: linked data, semantic web;
+		Level: 4;
+		BibTeX {
+			@article{DBLP:journals/ijswis/BizerHB09,
+			  author    = {Christian Bizer and
+			               Tom Heath and
+			               Tim Berners{-}Lee},
+			  title     = {Linked Data - The Story So Far},
+			  journal   = {Int. J. Semantic Web Inf. Syst.},
+			  volume    = {5},
+			  number    = {3},
+			  pages     = {1--22},
+			  year      = {2009},
+			  url       = {https://doi.org/10.4018/jswis.2009081901},
+			  doi       = {10.4018/jswis.2009081901},
+			  timestamp = {Fri, 30 Nov 2018 13:25:55 +0100},
+			  biburl    = {https://dblp.org/rec/journals/ijswis/BizerHB09.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
 }
 
 OWL {
@@ -143,6 +196,71 @@ OWL {
 			  doi       = {10.1016/j.websem.2003.07.001},
 			  timestamp = {Tue, 29 Jan 2019 12:27:03 +0100},
 			  biburl    = {https://dblp.org/rec/journals/ws/HorrocksPH03.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#042 {
+		Title: Querying OWL 2 QL ontologies under the SPARQL Metamodeling Semantics Entailment Regime;
+		Year: 2017;
+		Type: Paper;
+		Keywords: OWL2 QL, SPARQL;
+		Level: 3;
+		BibTeX {
+			@inproceedings{DBLP:conf/sebd/CimaGLP17,
+			  author    = {Gianluca Cima and
+			               Giuseppe De Giacomo and
+			               Maurizio Lenzerini and
+			               Antonella Poggi},
+			  editor    = {Sergio Flesca and
+			               Sergio Greco and
+			               Elio Masciari and
+			               Domenico Sacc{\`{a}}},
+			  title     = {Querying {OWL} 2 {QL} ontologies under the {SPARQL} Metamodeling Semantics
+			               Entailment Regime},
+			  booktitle = {Proceedings of the 25th Italian Symposium on Advanced Database Systems,
+			               Squillace Lido (Catanzaro), Italy, June 25-29, 2017},
+			  series    = {{CEUR} Workshop Proceedings},
+			  volume    = {2037},
+			  pages     = {165},
+			  publisher = {CEUR-WS.org},
+			  year      = {2017},
+			  url       = {http://ceur-ws.org/Vol-2037/paper\_24.pdf},
+			  timestamp = {Wed, 12 Feb 2020 16:44:57 +0100},
+			  biburl    = {https://dblp.org/rec/conf/sebd/CimaGLP17.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#043 {
+		Title: SWRL: A Semantic Web Rule Language Combining OWL and RuleML;
+		Year: 2004;
+		Type: Webpage;
+		Keywords: SWRL, OWL, RuleML;
+		Level: 2;
+	}
+	#044 {
+		Title: Semantic Web Query Languages;
+		Year: 2018;
+		Type: Paper;
+		Keywords: OWL, RDF, SPARQL;
+		Level: 1;
+		BibTeX {
+			@incollection{DBLP:reference/db/BaileyBFS18,
+			  author    = {James Bailey and
+			               Fran{\c{c}}ois Bry and
+			               Tim Furche and
+			               Sebastian Schaffert},
+			  editor    = {Ling Liu and
+			               M. Tamer {\"{O}}zsu},
+			  title     = {Semantic Web Query Languages},
+			  booktitle = {Encyclopedia of Database Systems, Second Edition},
+			  publisher = {Springer},
+			  year      = {2018},
+			  url       = {https://doi.org/10.1007/978-1-4614-8265-9\_1317},
+			  doi       = {10.1007/978-1-4614-8265-9\_1317},
+			  timestamp = {Tue, 16 Apr 2019 17:19:27 +0200},
+			  biburl    = {https://dblp.org/rec/reference/db/BaileyBFS18.bib},
 			  bibsource = {dblp computer science bibliography, https://dblp.org}
 			}
 		}
@@ -580,6 +698,158 @@ Ontology Matching {
 			}
 		}
 	}
+	#038 {
+		Title: Semantic Integration of Heterogeneous Databases of Same Domain Using Ontology;
+		Year: 2020;
+		Type: Paper;
+		Keywords: semantic integration, semantic web, ontology modelling, SPARQL;
+		Level: 4;
+		BibTeX {
+			@article{DBLP:journals/access/Asfand-e-yarA20,
+			  author    = {Muhammad Asfand{-}e{-}yar and
+			               Ramis Ali},
+			  title     = {Semantic Integration of Heterogeneous Databases of Same Domain Using
+			               Ontology},
+			  journal   = {{IEEE} Access},
+			  volume    = {8},
+			  pages     = {77903--77919},
+			  year      = {2020},
+			  url       = {https://doi.org/10.1109/ACCESS.2020.2988685},
+			  doi       = {10.1109/ACCESS.2020.2988685},
+			  timestamp = {Tue, 16 Jun 2020 17:15:04 +0200},
+			  biburl    = {https://dblp.org/rec/journals/access/Asfand-e-yarA20.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#039 {
+		Title: Ontology-based Data Integration;
+		Year: 2019;
+		Type: Paper;
+		Keywords: ontology modelling, data integration;
+		Level: 5;
+		BibTeX {
+			@inproceedings{DBLP:conf/rcdl/Manukyan19,
+			  author    = {Manuk Manukyan},
+			  editor    = {Alexander M. Elizarov and
+			               Boris Novikov and
+			               Sergey A. Stupnikov},
+			  title     = {Ontology-based Data Integration},
+			  booktitle = {Selected Papers of the {XXI} International Conference on Data Analytics
+			               and Management in Data Intensive Domains {(DAMDID/RCDL} 2019), Kazan,
+			               Russia, October 15-18, 2019},
+			  series    = {{CEUR} Workshop Proceedings},
+			  volume    = {2523},
+			  pages     = {117--128},
+			  publisher = {CEUR-WS.org},
+			  year      = {2019},
+			  url       = {http://ceur-ws.org/Vol-2523/paper13.pdf},
+			  timestamp = {Fri, 21 Aug 2020 16:53:17 +0200},
+			  biburl    = {https://dblp.org/rec/conf/rcdl/Manukyan19.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#041 {
+		Title: Ontology and Instance Matching;
+		Year: 2011;
+		Type: Paper;
+		Keywords: ontology matching, instance matching, matching techniques, matching tools;
+		Level: 5;
+		BibTeX {
+			@incollection{DBLP:conf/boemie/CastanoFMV11,
+			  author    = {Silvana Castano and
+			               Alfio Ferrara and
+			               Stefano Montanelli and
+			               Gaia Varese},
+			  editor    = {Georgios Paliouras and
+			               Constantine D. Spyropoulos and
+			               George Tsatsaronis},
+			  title     = {Ontology and Instance Matching},
+			  booktitle = {Knowledge-Driven Multimedia Information Extraction and Ontology Evolution
+			               - Bridging the Semantic Gap},
+			  series    = {Lecture Notes in Computer Science},
+			  volume    = {6050},
+			  pages     = {167--195},
+			  publisher = {Springer},
+			  year      = {2011},
+			  url       = {https://doi.org/10.1007/978-3-642-20795-2\_7},
+			  doi       = {10.1007/978-3-642-20795-2\_7},
+			  timestamp = {Wed, 03 Jun 2020 15:41:46 +0200},
+			  biburl    = {https://dblp.org/rec/conf/boemie/CastanoFMV11.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#045 {
+		Title: Ontology Alignment at the Instance and Schema Level;
+		Year: 2011;
+		Type: Paper;
+		Keywords: PARIS, ontology matching, instance matching;
+		Level: 5;
+		BibTeX {
+			@article{DBLP:journals/corr/abs-1105-5516,
+			  author    = {Fabian M. Suchanek and
+			               Serge Abiteboul and
+			               Pierre Senellart},
+			  title     = {Ontology Alignment at the Instance and Schema Level},
+			  journal   = {CoRR},
+			  volume    = {abs/1105.5516},
+			  year      = {2011},
+			  url       = {http://arxiv.org/abs/1105.5516},
+			  archivePrefix = {arXiv},
+			  eprint    = {1105.5516},
+			  timestamp = {Mon, 13 Aug 2018 16:48:05 +0200},
+			  biburl    = {https://dblp.org/rec/journals/corr/abs-1105-5516.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#048 {
+		Title: Survey on Ontology Mapping;
+		Year: 2012;
+		Type: Paper;
+		Keywords: ontology mapping, literature review;
+		Level: 3;
+		BibTeX {
+			@article{zhu2012survey,
+			  title     = {Survey on ontology mapping},
+			  author    = {Zhu, Junwu},
+			  journal   = {Physics Procedia},
+			  volume    = {24},
+			  pages     = {1857--1862},
+			  year      = {2012},
+			  publisher = {Elsevier}
+			}
+		}
+	}
+	#049 {
+		Title: Comparison of Ontology Alignment Systems Across Single Matching Task Via the McNemar's Test;
+		Year: 2018;
+		Type: Paper;
+		Keywords: matching systems, evaluation;
+		Level: 4;
+		BibTeX {
+			@article{DBLP:journals/tkdd/MohammadiAHT18,
+			  author    = {Majid Mohammadi and
+			               Amir Ahooye Atashin and
+			               Wout Hofman and
+			               Yao{-}Hua Tan},
+			  title     = {Comparison of Ontology Alignment Systems Across Single Matching Task
+			               Via the McNemar's Test},
+			  journal   = {{ACM} Trans. Knowl. Discov. Data},
+			  volume    = {12},
+			  number    = {4},
+			  pages     = {51:1--51:18},
+			  year      = {2018},
+			  url       = {https://doi.org/10.1145/3193573},
+			  doi       = {10.1145/3193573},
+			  timestamp = {Fri, 17 Apr 2020 08:46:08 +0200},
+			  biburl    = {https://dblp.org/rec/journals/tkdd/MohammadiAHT18.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
 }
 
 Matching System {
@@ -688,6 +958,69 @@ Matching System {
 			  doi       = {10.1007/s11390-016-1620-z},
 			  timestamp = {Sun, 28 May 2017 13:21:15 +0200},
 			  biburl    = {https://dblp.org/rec/journals/jcst/ShaoHLWCX16.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#040 {
+		Title: Lily Results for OAEI 2019;
+		Year: 2019;
+		Type: Paper;
+		Keywords: Lily, evaluation results;
+		Level: 2;
+		BibTeX {
+			@inproceedings{DBLP:conf/semweb/WuPZW19,
+			  author    = {Jiangheng Wu and
+			               Zhe Pan and
+			               Ce Zhang and
+			               Peng Wang},
+			  editor    = {Pavel Shvaiko and
+			               J{\'{e}}r{\^{o}}me Euzenat and
+			               Ernesto Jim{\'{e}}nez{-}Ruiz and
+			               Oktie Hassanzadeh and
+			               C{\'{a}}ssia Trojahn},
+			  title     = {Lily Results for {OAEI} 2019},
+			  booktitle = {Proceedings of the 14th International Workshop on Ontology Matching
+			               co-located with the 18th International Semantic Web Conference {(ISWC}
+			               2019), Auckland, New Zealand, October 26, 2019},
+			  series    = {{CEUR} Workshop Proceedings},
+			  volume    = {2536},
+			  pages     = {153--159},
+			  publisher = {CEUR-WS.org},
+			  year      = {2019},
+			  url       = {http://ceur-ws.org/Vol-2536/oaei19\_paper10.pdf},
+			  timestamp = {Wed, 12 Feb 2020 16:44:50 +0100},
+			  biburl    = {https://dblp.org/rec/conf/semweb/WuPZW19.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#047 {
+		Title: LILY: the Results for the Ontology Alignment Contest OAEI 2007;
+		Year: 2007;
+		Type: Paper;
+		Keywords: Lily, evaluation results;
+		Level: 2;
+		BibTeX {
+			@inproceedings{DBLP:conf/semweb/WangX07,
+			  author    = {Peng Wang and
+			               Baowen Xu},
+			  editor    = {Pavel Shvaiko and
+			               J{\'{e}}r{\^{o}}me Euzenat and
+			               Fausto Giunchiglia and
+			               Bin He},
+			  title     = {{LILY:} the Results for the Ontology Alignment Contest {OAEI} 2007},
+			  booktitle = {Proceedings of the 2nd International Workshop on Ontology Matching
+			               {(OM-2007)} Collocated with the 6th International Semantic Web Conference
+			               {(ISWC-2007)} and the 2nd Asian Semantic Web Conference (ASWC-2007),
+			               Busan, Korea, November 11, 2007},
+			  series    = {{CEUR} Workshop Proceedings},
+			  volume    = {304},
+			  publisher = {CEUR-WS.org},
+			  year      = {2007},
+			  url       = {http://ceur-ws.org/Vol-304/paper15.pdf},
+			  timestamp = {Wed, 12 Feb 2020 16:44:52 +0100},
+			  biburl    = {https://dblp.org/rec/conf/semweb/WangX07.bib},
 			  bibsource = {dblp computer science bibliography, https://dblp.org}
 			}
 		}
@@ -930,15 +1263,67 @@ Application {
 	}
 }
 
-Description Logic
-
-SPARQL
-
-RuleML
-
-Reasoner
-
-Data
+Description Logic {
+	#046 {
+		Title: TBox and ABox Reasoning in Expressive Description Logics;
+		Year: 1996;
+		Type: Paper;
+		Keywords: description logic, reasoning;
+		Level: 3;
+		BibTeX {
+			@inproceedings{DBLP:conf/dlog/GiacomoL96,
+			  author    = {Giuseppe De Giacomo and
+			               Maurizio Lenzerini},
+			  editor    = {Lin Padgham and
+			               Enrico Franconi and
+			               Manfred Gehrke and
+			               Deborah L. McGuinness and
+			               Peter F. Patel{-}Schneider},
+			  title     = {TBox and ABox Reasoning in Expressive Description Logics},
+			  booktitle = {Proceedings of the 1996 International Workshop on Description Logics,
+			               November 2-4, 1996, Cambridge, MA, {USA}},
+			  series    = {{AAAI} Technical Report},
+			  volume    = {{WS-96-05}},
+			  pages     = {37--48},
+			  publisher = {{AAAI} Press},
+			  year      = {1996},
+			  timestamp = {Fri, 05 Mar 2004 14:36:40 +0100},
+			  biburl    = {https://dblp.org/rec/conf/dlog/GiacomoL96.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+	#050 {
+		Title: Using Qualitative Spatial Logic for Validating Crowd-Sourced Geospatial Data;
+		Year: 2015;
+		Type: Paper;
+		Keywords: ontologies, logic, reasoning, spatial objects;
+		Level: 4;
+		BibTeX {
+			@inproceedings{DBLP:conf/aaai/DuNALJG15,
+			  author    = {Heshan Du and
+			               Hai H. Nguyen and
+			               Natasha Alechina and
+			               Brian Logan and
+			               Michael Jackson and
+			               John Goodwin},
+			  editor    = {Blai Bonet and
+			               Sven Koenig},
+			  title     = {Using Qualitative Spatial Logic for Validating Crowd-Sourced Geospatial
+			               Data},
+			  booktitle = {Proceedings of the Twenty-Ninth {AAAI} Conference on Artificial Intelligence,
+			               January 25-30, 2015, Austin, Texas, {USA}},
+			  pages     = {3948--3953},
+			  publisher = {{AAAI} Press},
+			  year      = {2015},
+			  url       = {http://www.aaai.org/ocs/index.php/IAAI/IAAI15/paper/view/9687},
+			  timestamp = {Wed, 10 Feb 2021 08:43:31 +0100},
+			  biburl    = {https://dblp.org/rec/conf/aaai/DuNALJG15.bib},
+			  bibsource = {dblp computer science bibliography, https://dblp.org}
+			}
+		}
+	}
+}
 
 Miscellaneous {
 	#025 {

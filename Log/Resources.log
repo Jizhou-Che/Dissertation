@@ -29,6 +29,11 @@ Websites {
 			https://dblp.org/db/conf/semweb/index.html;
 		}
 	}
+	Ontology Matchers {
+		LogMap {
+			https://www.cs.ox.ac.uk/isg/tools/LogMap/;
+		}
+	}
 }
 
 Lecture Notes {

@@ -251,3 +251,93 @@
 		Start from small fragments of implementation;
 	}
 }
+
+2021.03.04, Meeting 012 {
+	Contents {
+		Feedback on interim report;
+		Framework design verification {
+			Try applying description logic reasoners on reading role axioms;
+			Try applying description logic reasoners on mapping repair;
+		}
+		Project components {
+			Class diagram;
+			Documentation: not necessary;
+			Testing: not necessary;
+		}
+		Process of final presentation;
+		Time management;
+	}
+}
+
+2021.03.18, Meeting 013 {
+	Contents {
+		Implementation {
+			Read annotations and data properties of instances;
+		}
+		Final report structure {
+			Abstract: very short, summarise main contribution;
+			Introduction {
+				Original motivation section;
+				Description of work;
+				Example from research paper;
+			}
+			Methodology {
+				Original design section;
+				Compare with LogMap: main difference and contribution;
+				Design of algorithms;
+				Design of software;
+				On an abstract level;
+			}
+			Implementation {
+				Source code fragments: important contributions;
+				Reference to used resources: data, library, code, charts;
+				On a detailed level;
+			}
+			Evaluation {
+				Selection of datasets: justify;
+				Reference to existing experimental results: put tables and references;
+				Present the results: improvements, limitations;
+				Show understanding;
+			}
+		}
+		
+	}
+}
+
+2021.03.25, Meeting 014 {
+	Contents {
+		Project {
+			Include a user manual or README with the source code;
+		}
+		Time management {
+			Start writing final report;
+		}
+	}
+}
+
+2021.04.02, Meeting 015 {
+	Contents {
+		Implementation {
+			Generate axioms under assumptions (e.g., disjoint siblings) for testing ontologies, to facilitate DL reasoning: Reading #050;
+		}
+		Practical {
+			Video recording {
+				Clear structure of slides;
+				Good introduction: with examples;
+				Steps of matching: main ones, demonstrate with graphs;
+				Run Protégé on matching results;
+			}
+			Artefacts {
+				Compiled jar file;
+				Shell script to run tests;
+				Testing ontologies;
+			}
+			Showcase brochure {
+				Project title, keywords, abstract, images;
+			}
+		}
+		Time management {
+			Send fragments of final report to supervisor before meeting;
+		}
+	}
+}
