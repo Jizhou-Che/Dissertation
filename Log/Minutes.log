@@ -6,7 +6,7 @@
 		}
 		Tools {
 			Protégé with plugins: visualiser to description logic;
-			Pallet: reasoners;
+			Pellet: reasoners;
 		}
 		Discussion of the goal of the project;
 	}
@@ -120,7 +120,7 @@
 		Geofabric;
 	}
 	Tasks {
-		Pallet reasoner: download source code;
+		Pellet reasoner: download source code;
 		Protégé plugins;
 		Produce toy data that can be worked out manually;
 		Reference letter: provide supervisor with stamped transcript, CV, PS, and list of schools;
@@ -355,7 +355,68 @@
 
 2021.04.15, Meeting 017 {
 	Contents {
-		Report title;
-		Abstract;
+		Final report final structure {
+			Title: An Ontology Matching System for Data Integration;
+			Abstract: data integration -> ontologies -> ontology matching -> instance matching -> this project -> results;
+			Introduction {
+				Background;
+				Motivation {
+					Introduce syntax of description logic and ontologies;
+					Justify the help of properties, annotations and role axioms;
+					Example of what reasoners can do, and justify the help;
+				}
+				Summarise description of work briefly: high level aims and objectives;
+			}
+			Related work {
+				All the preparations I did before implementation: description logic, OWL syntax, ontologies, APIs;
+				More about available reasoners and APIs;
+				Knowledge not restricted to used ones;
+			}
+			Methodology {
+				Description of work in detail: LogMap adaptation, difference and contribution;
+				Overall design in abstract level;
+				Algorithm design: provide pseudo code;
+				Software design: package structures, use of APIs;
+			}
+			Implementation {
+				Build instructions: user manual and README;
+				Overall design in detailed level;
+				Detailed use of libraries and existing code: provide code fragments if possible;
+				Code fragments for core functionalities: indexing extra information, axiom deduction, mapping discovery and repair;
+			}
+			Evaluation {
+				Source and quality of testing ontologies and golden standards: provide links;
+				Evaluation results {
+					Against LogMap in schema matching;
+					Against golden standard in instance matching;
+					Against PARIS and Lily in schema and instance matching;
+				}
+				Future work: further improvements, limitations, solutions;
+			}
+			Reflection {
+				Challenges: available ontologies for instance matching, format of golden standards;
+				What I have learned, what I have done well, what I can do better;
+			}
+			Appendices {
+				Meeting minutes;
+				Links to repository is optional;
+				User manual;
+			}
+		}
+	}
+	Tasks {
+		Evaluation;
+		Final report;
+	}
+}
+
+2021.04.21, Meeting 018 {
+	Contents {
+		Artefacts {
+			Archive of project and testing systems;
+			Test ontologies;
+			Test script;
+			User manual;
+		}
 	}
 }

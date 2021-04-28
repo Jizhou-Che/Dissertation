@@ -2,14 +2,179 @@
 
 % e.g., User Manuals, supporting evidence for claims made in the main part of the dissertation (e.g. a copy of a user evaluation questionnaire), samples of test data, etc. Note that Appendices are optional.
 
+\chapter{Artefacts}
+
+There are five items in the submitted artefact folder. Three of them are directories, containing the Jonto Java archive, the LogMap Java archive, and the testing datasets respectively. A user manual named \texttt{MANUAL.md} is attached, which contains detailed instructions for running the tests, and a test script named \texttt{testscript.sh} is provided. A copy of the user manual is presented here for ease of reference.
+
+\section{User Manual}\label{user-manual}
+
+\subsection{Introduction}\label{introduction}
+
+This user manual provides a comprehensive set of instructions for
+building and deploying Jonto and LogMap for comparative testing. The
+structures of artefacts are introduced, and common pitfalls in running
+the tests are explained in detail.
+
+\subsubsection{Jonto}\label{jonto}
+
+The deliverable artefact of Jonto is a single Java archive
+\texttt{Jonto.jar}. It runs on either built-in or user-specified
+datasets, outputs an alignment in OWL format for all possible entities
+to a user specified directory, and evaluates the result with respect to
+the reference alignment. Please note that Jonto was built on Java SDK
+16, and a lower version of Java may fail to run the program.
+
+\subsubsection{LogMap}\label{logmap}
+
+The deliverable artefact of LogMap is the full version of LogMap 4,
+which participated in the 2020 OAEI Campaign in the Anatomy and Largebio
+tracks. While it has modes for user interaction and so on, this archived
+version was configured to run fully automatically on commandline. It
+takes two ontologies and outputs alignments in different formats. It
+also evaluates its result with respect to a reference alignment.
+
+The \texttt{LogMap} directory in the artefacts contains the following
+items:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \texttt{logmap-matcher-4.0.jar} the Java archive of LogMap built using
+  Maven.
+\item
+  \texttt{java-dependencies} the dependencies required by the Java
+  archive.
+\item
+  \texttt{parameters.txt} default parameters used by LogMap.
+\end{enumerate}
+
+\subsection{Using the test script}\label{using-the-test-script}
+
+\subsubsection{Running Jonto}\label{running-jonto}
+
+Before running Jonto, it is important to note that the artefact cannot
+be put in a directory with spaces and special characters in its path.
+Also, please note that the 2-argument version of the command currently
+fails for tha Java archive due to a Maven issue.
+
+Jonto can be configured to run matching tasks over either built-in
+ontologies or user-specified ones. There are two built-in ontology sets,
+being the Anatomy track and FMA\_NCI\_SMALL track as stated in the
+report. To run Jonto over these datasets, two commandline arguments need
+to be specified. The full command looks like:
+
+\texttt{java -{}-add-opens java.base/java.lang=ALL-UNNAMED -jar \textless{}path\_to\_jonto\_archive\textgreater{} \textless{}dataset\_id\textgreater{} \textless{}absolute\_output\_path\textgreater{}}
+
+Detailed explanations are given below.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The \texttt{-{}-add-opens java.base/java.lang=ALL-UNNAMED} VM options
+  must be added. This is due to an exceptional attempt to access Java
+  internal classes in the OWL API implementation.
+\item
+  Specify \texttt{\textless{}path\_to\_jonto\_archive\textgreater{}} as
+  the path to the \texttt{Jonto.jar} archive. The following 2 segments
+  are commandline arguments for Jonto.
+\item
+  The first commandline argument
+  \texttt{\textless{}dataset\_id\textgreater{}} is the ID of the
+  built-in dataset to be used. It can be either 0 or 1 at the moment,
+  with 0 specifying the Anatomy dataset, and 1 specifying the
+  FMA\_NCI\_SMALL track.
+\item
+  The second commandline argument
+  \texttt{\textless{}absolute\_output\_path\textgreater{}} is the output
+  path for the generated alignment. It should be absolute and must
+  exist. For example: \texttt{/Users/jizhou/Downloads/out/}.
+\end{enumerate}
+
+To run Jonto over external datasets, four commandline arguments need to
+be specified. The full command looks like:
+
+\texttt{java -{}-add-opens java.base/java.lang=ALL-UNNAMED -jar \textless{}path\_to\_jonto\_archive\textgreater{} \textless{}path\_to\_owl\_1\textgreater{} \textless{}path\_to\_owl\_2\textgreater{} \textless{}path\_to\_reference\_rdf\_or\_txt\textgreater{}\\\textless{}absolute\_output\_path\textgreater{}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The first and second commandline arguments are the two OWL ontologies
+  to be matched. They can be in either relative or absolute paths. It is
+  important for Jonto that they are given in the correct order as
+  specified in the reference alignment.
+\item
+  The third commandline argument is the reference alignment. It can be
+  in either relative or absolute paths, and the RDF and TXT formats are
+  supported.
+\item
+  The fourth commandline argument is the output path for the generated
+  alignment. It should be absolute and must exist. For example:
+  \texttt{/Users/jizhou/Downloads/out/}.
+\end{enumerate}
+
+\subsubsection{Running LogMap}\label{running-logmap}
+
+To run LogMap for evaluation, 6 commandline arguments need to be
+specified. The full command generally looks like:
+
+\texttt{java -{}-add-opens java.base/java.lang=ALL-UNNAMED -jar \textless{}path\_to\_logmap\_archive\textgreater{} EVALUATION file:\textless{}absolute\_path\_to\_owl\_1\textgreater{} file:\textless{}absolute\_path\_to\_owl\_2\textgreater{}\\\textless{}absolute\_path\_to\_reference\_rdf\textgreater{} \textless{}absolute\_output\_path\textgreater{} \textless{}classify\_boolean\textgreater{}}
+
+Detailed explanations are given below.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The \texttt{-{}-add-opens java.base/java.lang=ALL-UNNAMED} VM options
+  must be added. Again, this is due to an exceptional attempt to access
+  Java internal classes in the OWL API implementation.
+\item
+  Specify \texttt{\textless{}path\_to\_logmap\_archive\textgreater{}} as
+  the path to the \texttt{logmap-matcher-4.0.jar} archive. The following
+  6 segments are commandline arguments for the LogMap matcher.
+\item
+  The first commandline argument \texttt{EVALUATION} tells LogMap to
+  perform evaluation with respect to a reference mapping file.
+\item
+  The second and third commandline arguments are the two OWL ontologies
+  to be matched. LogMap requires them to be specified as a
+  \texttt{file:} indicator followed by an absolute path. For example:
+
+  \texttt{file:/Users/jizhou/Downloads/LargeBio\_dataset\_oaei/\\oaei\_NCI\_small\_overlapping\_fma.owl}
+\end{enumerate}
+
+Please note that non-ASCII characters as well as some reserved
+characters including spaces are not permitted in the OWL ontology path.
+If you encounter an \texttt{Illegal character in path at index \#}
+error, try to avoid using special characters in the path.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\item
+  The fourth commandline argument is the reference alignment RDF. It
+  should be an absolute path to an RDF document. For example:
+
+  \texttt{/Users/jizhou/Downloads/LargeBio\_dataset\_oaei/\\oaei\_FMA2NCI\_UMLS\_mappings\_with\_flagged\_repairs.rdf}
+\item
+  The fifth commandline argument is the output path. It should be
+  absolute and must exist. For example:
+
+  \texttt{/Users/jizhou/Downloads/out/}
+\item
+  The sixth commandline argument is a boolean telling LogMap whether to
+  classify the input ontologies together with the mappings or not.
+\end{enumerate}
+
+
 \chapter{Meeting Minutes}
 
-As stated in Section [RESOURCE MANAGEMENT], project related resources are managed through Git version control. The meeting minutes, for example, can be found at \url{https://github.com/Jizhou-Che/Dissertation/blob/master/Log/Minutes.log}. To provide evidence of my leading role in the meetings and regular progress, however, the meeting minutes until present are presented below.
+As stated in Section 6.1.3, project related resources are managed through Git version control. The meeting minutes, for example, can be found at \url{https://github.com/Jizhou-Che/Dissertation/blob/master/Log/Minutes.log}. To provide evidence of my orienting role in the meetings and regular progress, however, the full meeting minutes throughout the project are presented below.
 \\
 
 \begin{spacing}{1.0}
 
 \lstset{
+language={},
 basicstyle=\ttfamily\scriptsize,
 showspaces=false,
 showtabs=false,
@@ -26,7 +191,7 @@ tabsize=2
 		}
 		Tools {
 			Protege with plugins: visualiser to description logic;
-			Pallet: reasoners;
+			Pellet: reasoners;
 		}
 		Discussion of the goal of the project;
 	}
@@ -139,7 +304,7 @@ tabsize=2
 		Geofabric;
 	}
 	Tasks {
-		Pallet reasoner: download source code;
+		Pellet reasoner: download source code;
 		Protege plugins;
 		Produce toy data that can be worked out manually;
 		Reference letter: provide supervisor with stamped transcript, CV, PS, and list of schools;
@@ -257,6 +422,185 @@ tabsize=2
 				Compromises;
 			}
 			Put meeting minutes in appendix;
+		}
+	}
+}
+
+2020.12.16, Meeting 011 {
+	Contents {
+		No meetings in exam period and vacation;
+		Lily system: check reference list in evaluation paper;
+	}
+	Tasks {
+		Start from small fragments of implementation;
+	}
+}
+
+2021.03.04, Meeting 012 {
+	Contents {
+		Feedback on interim report;
+		Framework design verification {
+			Try applying description logic reasoners on reading role axioms;
+			Try applying description logic reasoners on mapping repair;
+		}
+		Project components {
+			Class diagram;
+			Documentation: not necessary;
+			Testing: not necessary;
+		}
+		Process of final presentation;
+		Time management;
+	}
+}
+
+2021.03.18, Meeting 013 {
+	Contents {
+		Implementation {
+			Read annotations and data properties of instances;
+		}
+		Final report structure {
+			Abstract: very short, summarise main contribution;
+			Introduction {
+				Original motivation section;
+				Description of work;
+				Example from research paper;
+			}
+			Methodology {
+				Original design section;
+				Compare with LogMap: main difference and contribution;
+				Design of algorithms;
+				Design of software;
+				On an abstract level;
+			}
+			Implementation {
+				Source code fragments: important contributions;
+				Reference to used resources: data, library, code, charts;
+				On a detailed level;
+			}
+			Evaluation {
+				Selection of datasets: justify;
+				Reference to existing experimental results: put tables and references;
+				Present the results: improvements, limitations;
+				Show understanding;
+			}
+		}
+		
+	}
+}
+
+2021.03.25, Meeting 014 {
+	Contents {
+		Project {
+			Include a user manual or README with the source code;
+		}
+		Time management {
+			Start writing final report;
+		}
+	}
+}
+
+2021.04.02, Meeting 015 {
+	Contents {
+		Implementation {
+			Generate axioms under assumptions (e.g., disjoint siblings) for testing ontologies, to facilitate DL reasoning: Reading #050;
+		}
+		Practical {
+			Video recording {
+				Clear structure of slides;
+				Good introduction: with examples;
+				Steps of matching: main ones, demonstrate with graphs;
+				Run Protege on matching results;
+			}
+			Artefacts {
+				Compiled jar file;
+				Shell script to run tests;
+				Testing ontologies;
+			}
+			Showcase brochure {
+				Project title, keywords, abstract, images;
+			}
+		}
+		Time management {
+			Send fragments of final report to supervisor before meeting;
+		}
+	}
+}
+
+2021.04.08, Meeting 016 {
+	Contents {
+		Implement precision and confusion matrix: code to calculate automatically;
+		Implement running time calculation;
+		Compare results with other matching tools such as Lily;
+	}
+	Tasks {
+		Deliver the Introduction and Methodology drafts of final report;
+	}
+}
+
+2021.04.15, Meeting 017 {
+	Contents {
+		Final report final structure {
+			Title: An Ontology Matching System for Data Integration;
+			Abstract: data integration -> ontologies -> ontology matching -> instance matching -> this project -> results;
+			Introduction {
+				Background;
+				Motivation {
+					Introduce syntax of description logic and ontologies;
+					Justify the help of properties, annotations and role axioms;
+					Example of what reasoners can do, and justify the help;
+				}
+				Summarise description of work briefly: high level aims and objectives;
+			}
+			Related work {
+				All the preparations I did before implementation: description logic, OWL syntax, ontologies, APIs;
+				More about available reasoners and APIs;
+				Knowledge not restricted to used ones;
+			}
+			Methodology {
+				Description of work in detail: LogMap adaptation, difference and contribution;
+				Overall design in abstract level;
+				Algorithm design: provide pseudo code;
+				Software design: package structures, use of APIs;
+			}
+			Implementation {
+				Build instructions: user manual and README;
+				Overall design in detailed level;
+				Detailed use of libraries and existing code: provide code fragments if possible;
+				Code fragments for core functionalities: indexing extra information, axiom deduction, mapping discovery and repair;
+			}
+			Evaluation {
+				Source and quality of testing ontologies and golden standards: provide links;
+				Evaluation results {
+					Against LogMap in schema matching;
+					Against golden standard in instance matching;
+					Against PARIS and Lily in schema and instance matching;
+				}
+				Future work: further improvements, limitations, solutions;
+			}
+			Reflection {
+				Challenges: available ontologies for instance matching, format of golden standards;
+				What I have learned, what I have done well, what I can do better;
+			}
+			Appendices {
+				Meeting minutes;
+				Links to repository;
+				User manual;
+			}
+		}
+	}
+	Tasks {
+		Evaluation;
+		Final report;
+	}
+}
+
+2021.04.21, Meeting 018 {
+	Contents {
+		Artefacts {
+			Archive of project and testing systems;
+			Test ontologies;
+			Test script;
+			User manual;
 		}
 	}
 }
