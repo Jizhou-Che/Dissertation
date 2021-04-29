@@ -410,13 +410,41 @@
 	}
 }
 
-2021.04.21, Meeting 018 {
+2021.04.22, Meeting 018 {
 	Contents {
 		Artefacts {
 			Archive of project and testing systems;
 			Test ontologies;
 			Test script;
 			User manual;
+		}
+	}
+}
+
+2021.04.29, Meeting 019 {
+	Contents {
+		Dissertation submission and discussions;
+		Practical {
+			Video recording: 10 minutes;
+			Introduction and Motivation: 3 minutes {
+				Make a hierarchical example solvable by existing matching systems;
+				Make a logical deduction example solvable by Jonto;
+			}
+			Design and Methodology: 3 minutes {
+				System design: pictures and bullet points;
+			}
+			Evaluation: 3 minutes {
+				Links to datasets in slides;
+				Reference to evaluation result table in slides;
+				Result of Jonto with demonstration in Protégé;
+				Advantages and disadvantages;
+				Future work;
+			}
+			Conclusion and Summary: 1 minute;
+		}
+		Q&A Session {
+			Bring slides to session: slides used in video recording can be used for demonstration;
+			Prepare for general questions related to motivation, contribution, design and evaluation;
 		}
 	}
 }

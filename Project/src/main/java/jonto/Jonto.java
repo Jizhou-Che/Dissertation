@@ -4,6 +4,7 @@ import jonto.indexing.IndexManager;
 import jonto.indexing.OntologyProcessing;
 import jonto.indexing.ReasonerBasedIndexManager;
 import jonto.io.AlignmentWriter;
+import jonto.io.OntologyLoader;
 import jonto.io.RDFReader;
 import jonto.io.TXTReader;
 import jonto.lexicon.LexicalUtilities;
@@ -11,7 +12,6 @@ import jonto.mapping.CandidateMappingManager;
 import jonto.mapping.MappingManager;
 import jonto.mapping.objects.MappingObjectStr;
 import jonto.reasoning.AnchorReasoning;
-import jonto.io.OntologyLoader;
 import jonto.utilities.Utilities;
 
 import java.util.HashSet;
@@ -76,9 +76,11 @@ public class Jonto {
                 alignment_writer.addObjPropMapping(alignment.getIRIStrEnt1(), alignment.getIRIStrEnt2(), alignment.getMappingDirection(), alignment.getConfidence());
             } else if (alignment.isDataPropertyMapping()) {
                 alignment_writer.addDataPropMapping(alignment.getIRIStrEnt1(), alignment.getIRIStrEnt2(), alignment.getMappingDirection(), alignment.getConfidence());
+            } else {
+                alignment_writer.addClassMapping(alignment.getIRIStrEnt1(), alignment.getIRIStrEnt2(), alignment.getMappingDirection(), alignment.getConfidence());
             }
-            alignment_writer.saveFiles();
         }
+        alignment_writer.saveFiles();
     }
 
     private void IndexLexiconAndStructure() {

@@ -1251,7 +1251,7 @@ public abstract class MappingManager {
         //TODO: we might be interested in storing the direction for the mappings...
         //TODO: also for gold standard
         //MappingObjectStr obj;
-        mappings_candidates_Str.add(new MappingObjectStr(iri1, iri2, getConfidence4Mapping(ide1, ide2)));
+        mappings_candidates_Str.add(new MappingObjectStr(iri1, iri2, getConfidence4Mapping(ide1, ide2), MappingObjectStr.EQ, MappingObjectStr.CLASSES));
 
         //getConfidence4Mapping(ide1, ide2);
     }
@@ -1287,7 +1287,9 @@ public abstract class MappingManager {
                 new MappingObjectStr(
                         index.getIRIStr4DataPropIndex(ide1),
                         index.getIRIStr4DataPropIndex(ide2),
-                        getConfidence4DataPropertyAnchor(ide1, ide2)));
+                        getConfidence4DataPropertyAnchor(ide1, ide2),
+                        MappingObjectStr.EQ,
+                        MappingObjectStr.DATAPROPERTIES));
     }
 
     public void addStringAnchorObjProp(int ide1, int ide2) {
@@ -1295,7 +1297,9 @@ public abstract class MappingManager {
                 new MappingObjectStr(
                         index.getIRIStr4ObjPropIndex(ide1),
                         index.getIRIStr4ObjPropIndex(ide2),
-                        getConfidence4ObjectPropertyAnchor(ide1, ide2)));
+                        getConfidence4ObjectPropertyAnchor(ide1, ide2),
+                        MappingObjectStr.EQ,
+                        MappingObjectStr.OBJECTPROPERTIES));
     }
 
 
@@ -1304,7 +1308,9 @@ public abstract class MappingManager {
                 new MappingObjectStr(
                         index.getIRIStr4IndividualIndex(ide1),
                         index.getIRIStr4IndividualIndex(ide2),
-                        getConfidence4InstanceMapping(ide1, ide2)));
+                        getConfidence4InstanceMapping(ide1, ide2),
+                        MappingObjectStr.EQ,
+                        MappingObjectStr.INSTANCES));
     }
 
 
