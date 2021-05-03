@@ -1,0 +1,82 @@
+// Title.
+
+Hello, I am Jizhou Che. My final year project is An Ontology Matching System for Data Integration, supervised by Dr. Heshan Du.
+
+
+// Table of Contents.
+
+The content of this presentation is split into the following sections. I'll first introduce the background of data integration and ontology matching, then summarise the related works to bring out the motivation and novelty of this project. This will be followed by a detailed explanation of the design and implementation, and the evaluation results and future works will be discussed.
+
+
+// Introduction.
+
+The ability of using data from multiple sources simultaneously has been demanded in various areas. For example, translational research data from biomedical sub-domains can be used together to build human-centered records, and city infrastructure datasets held by different authorities need to be integrated to make informed decision support.
+
+Traditional data integration has been problematic because of the semantic heterogeneity problem. It means that data can be stored in strange formats, and their semantics are not well-presented for knowledge interpretation and reasoning. Imagine you have a table of data which you don't know the meaning of each column, and it appears to be an image in a PDF document: it is a nightmare.
+
+To address these issues, the idea of formal knowledge representation with ontologies was proposed. It defines ontologies as a universal framework for modeling terminologies, individuals, and relations in a knowledge base.
+
+With datasets modeled by carefully established ontologies, data integration can be performed by simply finding the alignments between entities of respective ontologies, without having to produce a newly merged dataset.
+
+
+// Related Work.
+
+So a number of works have been conducted on ontology matching techniques, and a classification based on their algorithmic characteristics is proposed in the dissertation. Basically there are two main approaches: similarity-based and reasoning-based, with the former one focusing on similarities between linguistic or contextual components, and the later one focusing on structural reasoning heuristics and satisfiability checks.
+
+There are also a lot of existing matching systems, such as Lily that employs similarity-based techniques, PARIS that performs probabilistic reasoning, and LogMap that uses a hybrid of deductive reasoning and similarity-based techniques. They have shown great performance in either schema matching or instance matching.
+
+The Ontology Alignment Evaluation Initiative (OAEI) organises annual campaigns to evaluate existing matching systems, providing official frameworks, dataset tracks and reference alignments for evaluation and testing.
+
+There are also tools for ontology editing such as Protégé and for alignment visualisation such as HOMER and AlViz.
+
+
+// Motivation and Objectives.
+
+Now, despite the good performance of those matching systems, the expressive power of OWL ontologies is not fully exploited. Apart from classes and instances, ontologies can contain datatypes, literals, data properties, object properties and annotation properties. Further more, complex axioms can be created by combining those components. The existing systems make insufficient use of those extra information, especially the object and data properties, and their shallow structural reasoning cannot deduct such complex axioms. Consider the following axioms that can be represented in an ontology, the class of students doing dissertation is a subclass of the Students class, students doing dissertation is defined as individuals who take at least one dissertation module, and Students is defined as individuals who take modules only from the Modules class. If you are interested, pause the video and see what you can deduct from those axioms. You can conclude that Dissertation is a subclass of Modules, but it is not obvious in any hierarchical structure. This is where description logic reasoners come in handy. Since the expressive power of OWL has description logic as foundation, utilising description logic reasoners to deduct OWL axioms for ontology matching is made possible. This is the core novelty and objective of this project: to develop an ontology matching system based on description logic reasoning that has the capability of deducting complex axioms.
+
+
+// Design.
+
+For the methodological design of this project, since LogMap is a mature system based on deductive reasoning, this project learned from its structure to build a foundation. The design is given in figure 1. You can see that after reading the input ontologies O1 and O2, labels for the entities are processed and put into a data structure called inverted index table. This step is called lexical indexation, which makes it much easier to index the entities by individual lexicons.
+
+This is followed by the structural indexation, which uses a description logic reasoner to compute the hierarchical structure of classes. The result is stored in a data structure called interval labeling schema, which is optimised for storing directed acyclic graphs.
+
+After that, the iterative process of mapping discovery and repair starts, which is the core component of this system. At the discovery stage, new axioms are deducted from the current anchor set to help with informed similarity checks, and at the repair stage, inconsistencies are discovered by the description logic reasoner to discard the unsatisfiable mappings.
+
+Let's look at the implementation of this project for a clearer demonstration.
+
+
+// Implementation.
+
+The project was implemented in Java 16, with core dependencies including the OWL API and the HermiT reasoner API managed my Maven. It was implemented in a carefully managed modular structure.
+
+The indexing module takes care of the lexical and structural indexation, with some data structures and lexicon processing tools adapted from LogMap. For simplicity, language translation and semantic analysis were not implemented. For structural indexation, object properties are indexed similarly to classes, as they also possess hierarchical relationships such as subsumption. The others are attached to their related entities as strings, so similarities can be discovered by the ISUB string matcher.
+
+The mapping module manages the discovery and repair of anchors and candidates. Within each iteration, new anchors are set by selecting the entity pairs with high structural and lexical similarities. This nods to the principle of locality, meaning that only the neighbourhood entities that are currently reasonable are considered, which restricts the anchor set to crucial ones at all time.
+
+The reasoning module implements core reasoning steps that utilises the HermiT reasoner for logical inferences. The idea is, hierarchical structure can be computed and used for anchor assessment and repair. For example, an alignment between two instances may be kept or rejected depending on the equivalence, disjointness or subsumption relationships of their parent classes and predecessors.
+
+The program accepts OWL ontologies as input, and RDF or TXT documents as reference alignment for evaluation, which adheres to the SEALS standard. The output is a single OWL ontology with equivalent entity axioms for classes, instances, object properties and data properties.
+
+
+// Evaluation.
+
+Although the implemented system is capable of producing alignments between various entities, the evaluation uses the class matching datasets that LogMap was tested with, as it is important to see the comparative results between description logic reasoning and the Dowling-Gallier algorithm used by LogMap. These formulas show how the precision, recall and F-measure were calculated.
+
+The first set of evaluation was performed with respect to the Anatomy track offered by the SEALS platform, dataset available at the link below. Specifically, these ontologies have around 3000 classes, and the 2020 results for participated systems and my implementation Jonto is given in table 1.
+
+The second set of evaluation was performed with respect to the Largebio track offered by both SEALS and HOBBIT, dataset available at the link below. Specifically, these ontologies have around 5000 classes, and the 2020 results for participated systems and my implementation is given in table 2.
+
+It can be seen that although Jonto discovered less mappings than the other systems, the mappings it produced have very good precision. It is possible that the recall is lower than expected because more candidate mappings are discarded due to some critical restrictions on the mappings to accept, and there is always a trade-off between the precision and the number of mappings discovered. Some of the participating systems including LogMap also adapts context-specific dictionaries for semantic analysis, which is a clear disadvantage for Jonto. And considering there are minor inconsistencies in the reference mappings as well, the result is generally satisfying. The time complexity is also decent, with a linear growth with respect to the ontology size, and still faster than some existing matchers despite using a full reasoning-based approach.
+
+Since testing with instance matching tracks requires the implementation to be adapted to very different frameworks and formats, those tests were not performed. However, local tests over ontologies with sufficient number of instances and properties showed that correct mappings can be discovered between other types of entities as well.
+
+
+// Summary.
+
+Considering the reflexions on this project, the workplan has been well-followed and all milestones have been reached. There were little flaws in time management, and I was able to get back on track immediately. The resources including readings notes, meeting minutes and source code have been well-managed throughout, with the help of Git version control and Kanban boards. Challenges were faced in many aspects, such as the steep learning curve, the locating of quality resources, algorithm implementation and adhering to evaluation formats. Nevertheless, the project went successful and the objectives were met. Future works of the project include adding multi-lingual support and semantic analysis to lexical indexation, optimising the use of reasoners for different OWL profiles for efficiency improvements, and possibly integrating with an official evaluation framework for more thorough evaluation.
+
+
+// References.
+
+This is the end of the presentation, these are my references, thank you for listening.
